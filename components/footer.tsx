@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="group hover:translate-y-2 transition-transform cursor-pointer">
             <div className="flex items-center gap-2 mb-4 hover:gap-3 transition-all">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                <span className="text-white font-bold">DN</span>
+                <span className="text-white font-bold">AP</span>
               </div>
               <div>
                 <h3 className="font-bold group-hover:text-primary transition-colors">Dr Niyaz Nazeer</h3>
