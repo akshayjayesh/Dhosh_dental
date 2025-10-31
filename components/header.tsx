@@ -40,7 +40,7 @@ export default function Header() {
           <div className="relative w-12 h-12">
             <Image
               src="/logo-mascot.png"
-              alt="Dr Niyaz Nazeer's Dental Clinic"
+              alt="Grace And Glow - Aesthetic & Dental Clinic"
               width={48}
               height={48}
               className="object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300 shadow-none rounded-4xl"
@@ -48,8 +48,8 @@ export default function Header() {
             />
           </div>
           <div className="hidden sm:block">
-            <h1 className="text-lg font-bold text-primary">Dr Niyaz Nazeer</h1>
-            <p className="text-xs text-muted-foreground">Orthodontic Care</p>
+            <h1 className="text-lg font-bold text-primary">Grace And Glow</h1>
+            <p className="text-xs text-muted-foreground">Aesthetic & Dental Care</p>
           </div>
         </button>
 

@@ -15,15 +15,15 @@ export default function Footer() {
           <div className="group hover:translate-y-2 transition-transform cursor-pointer">
             <div className="flex items-center gap-2 mb-4 hover:gap-3 transition-all">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                <span className="text-white font-bold">DN</span>
+                <span className="text-white font-bold">GG</span>
               </div>
               <div>
-                <h3 className="font-bold group-hover:text-primary transition-colors">Dr Niyaz Nazeer</h3>
-                <p className="text-xs text-gray-300">Orthodontic Care</p>
+                <h3 className="font-bold group-hover:text-primary transition-colors">Grace And Glow</h3>
+                <p className="text-xs text-gray-300">Aesthetic & Dental Care</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed hover:text-gray-100 transition-colors">
-              Transforming smiles with cutting-edge orthodontic technology and personalized care.
+              Transforming appearances and smiles with cutting-edge aesthetic and dental technology.
             </p>
           </div>
 
@@ -44,23 +44,23 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Services
+                  Treatments
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById("doctors")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Doctors
+                  Orthodontics
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Branches
+                  Dental Care
                 </button>
               </li>
               <li>
@@ -68,7 +68,7 @@ export default function Footer() {
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Contact
+                  Consultation
                 </button>
               </li>
             </ul>
@@ -173,7 +173,7 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Niyaz Nazeer's. All rights reserved.</p>
+          <p className="text-sm text-gray-300">&copy; 2025 Grace And Glow. All rights reserved.</p>
           <div className="flex gap-4">
             <a
               href="https://facebook.com"

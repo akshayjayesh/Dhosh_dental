@@ -6,38 +6,38 @@ import { Card } from "@/components/ui/card"
 
 const cases = [
   {
-    title: "Severe Crowding Case",
-    treatment: "Clear Aligners",
-    image: "/dental-before-after-crowded-teeth-alignment-transf.jpg",
+    title: "Acne Transformation",
+    treatment: "Acne Treatment",
+    image: "/before-after-acne-treatment-clear-skin.jpg",
   },
   {
-    title: "Overbite Correction",
-    treatment: "Metal Braces",
-    image: "/dental-bite-correction-before-after-orthodontic-tr.jpg",
+    title: "Skin Radiance",
+    treatment: "Skin Brightening",
+    image: "/before-after-skin-brightening-radiant.jpg",
   },
   {
-    title: "Aesthetic Enhancement",
-    treatment: "Ceramic Braces",
-    image: "/smile-makeover-before-after-dental-treatment-impro.jpg",
+    title: "Anti-Aging Results",
+    treatment: "Botox & Fillers",
+    image: "/before-after-botox-anti-aging-transformation.jpg",
   },
   {
-    title: "Spacing Correction",
-    treatment: "Clear Aligners",
-    image: "/teeth-gap-closure-dental-alignment-before-after.jpg",
+    title: "Hair Reduction",
+    treatment: "Laser Hair Removal",
+    image: "/before-after-laser-hair-removal-smooth-skin.jpg",
   },
   {
-    title: "Complex Case",
-    treatment: "Metal Braces",
-    image: "/complex-dental-malocclusion-correction-treatment-r.jpg",
+    title: "Scar Reduction",
+    treatment: "Scar Treatment",
+    image: "/before-after-scar-reduction-treatment.jpg",
   },
   {
-    title: "Quick Alignment",
-    treatment: "Clear Aligners",
-    image: "/teeth-alignment-before-after.jpg",
+    title: "Smile Makeover",
+    treatment: "Dental Braces",
+    image: "/before-after-smile-makeover-dental-braces.jpg",
   },
 ]
 
-const filters = ["All", "Aligners", "Braces"]
+const filters = ["All", "Skin", "Dental"]
 
 export default function BeforeAfter() {
   const [selectedFilter, setSelectedFilter] = useState("All")
@@ -46,7 +46,11 @@ export default function BeforeAfter() {
   const filtered =
     selectedFilter === "All"
       ? cases
-      : cases.filter((c) => c.treatment.includes(selectedFilter === "Aligners" ? "Aligner" : "Braces"))
+      : cases.filter((c) => {
+          if (selectedFilter === "Skin") return !c.treatment.includes("Dental")
+          if (selectedFilter === "Dental") return c.treatment.includes("Dental")
+          return true
+        })
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden">
@@ -60,7 +64,7 @@ export default function BeforeAfter() {
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Before & After Gallery</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            See the stunning transformations our patients have achieved
+            See the stunning transformations our clients have achieved
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>

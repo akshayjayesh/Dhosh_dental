@@ -11,18 +11,18 @@ const technologies = [
     icon: Zap,
   },
   {
-    title: "iTero Scanner",
-    description: "Latest intraoral scanning technology for accuracy",
+    title: "Laser Technology",
+    description: "Latest laser systems for aesthetic procedures",
     icon: Cpu,
   },
   {
     title: "AI-Powered Planning",
-    description: "Artificial intelligence for optimal treatment outcomes",
+    description: "Artificial intelligence for optimal results",
     icon: Brain,
   },
   {
     title: "Digital Smile Design",
-    description: "Visualize your smile before treatment begins",
+    description: "Visualize your transformation before treatment",
     icon: Smile,
   },
 ]
@@ -51,11 +51,22 @@ export default function Technology() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        {/* Section Title */}
+        {/* Section Header with Enhanced Messaging */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Advanced Technology</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Cutting-edge equipment for superior treatment results
+          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+            Technology & Expertise
+          </span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            Advanced Technology Prescribed for Excellence
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
+            At Grace And Glow, we invest in the most advanced dermatological and dental technology available. Every
+            piece of equipment in our clinic is carefully selected and scientifically proven to deliver superior
+            results. We don't just follow trends—we implement evidence-based, internationally certified treatments that
+            prioritize your safety and satisfaction.
+          </p>
+          <p className="text-lg text-primary font-semibold max-w-3xl mx-auto">
+            We are the real deal in aesthetic and dental excellence.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
@@ -63,14 +74,14 @@ export default function Technology() {
         {/* Main Technology Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl h-96 group cursor-pointer hover:shadow-3xl transition-all hover:-translate-y-2 duration-300">
           <img
-            src="/modern-dental-clinic-technology-equipment-itero-sc.jpg"
-            alt="Advanced dental technology"
+            src="/modern-aesthetic-clinic-technology-equipment-derma.jpg"
+            alt="Modern aesthetic clinic technology"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-100"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         </div>
 
-        {/* Technology Features Grid */}
+        {/* Technology Features Grid - Enhanced with Professional Details */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {technologies.map((tech, idx) => {
             const Icon = tech.icon
@@ -107,28 +118,73 @@ export default function Technology() {
           })}
         </div>
 
-        {/* Benefits Badge Strip */}
-        <div className="bg-white rounded-2xl p-8 shadow-lg border border-border hover:border-primary/30 transition-all hover:shadow-xl">
+        {/* Professional Approach Statement */}
+        <div className="bg-gradient-to-r from-primary/5 via-white to-accent/5 rounded-2xl p-10 border border-primary/20 hover:border-primary/40 transition-all shadow-lg hover:shadow-xl mb-12">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Our Treatment Philosophy</h3>
+          <p className="text-lg text-foreground leading-relaxed text-center max-w-3xl mx-auto mb-6">
+            We use only FDA-approved, clinically tested technology that's specifically prescribed for each treatment
+            type. Our doctors stay updated with international dermatological and dental standards, ensuring you receive
+            globally recognized excellence. Every procedure is guided by science, performed with precision, and
+            customized to your unique needs.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6 mb-8 pb-8 border-b border-primary/20">
+            <div className="space-y-3">
+              <h4 className="font-bold text-foreground flex items-center gap-2">
+                <span className="text-2xl">🏥</span> Medical Grade Technology
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                All equipment meets FDA, CE, and ISO standards with regular calibration and maintenance protocols
+                ensuring optimal performance and patient safety.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h4 className="font-bold text-foreground flex items-center gap-2">
+                <span className="text-2xl">📊</span> Evidence-Based Approach
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                Every treatment protocol is based on peer-reviewed research and clinical trials, ensuring you receive
+                scientifically validated procedures.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h4 className="font-bold text-foreground flex items-center gap-2">
+                <span className="text-2xl">👨‍⚕️</span> Expert Practitioners
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                Our certified specialists undergo continuous training in latest techniques and technology, maintaining
+                international board certifications.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h4 className="font-bold text-foreground flex items-center gap-2">
+                <span className="text-2xl">✨</span> Real Results
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                We're not just equipped with technology—we have the expertise to master it, delivering transformative
+                results you can see and feel.
+              </p>
+            </div>
+          </div>
           <div className="grid sm:grid-cols-3 gap-6">
             <div className="flex items-center gap-4 animate-in fade-in slide-in-from-left-4 duration-700 hover:translate-x-2 transition-transform cursor-pointer">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-primary">✓</div>
               <div>
-                <p className="font-bold text-foreground">Painless Treatment</p>
-                <p className="text-sm text-muted-foreground">Comfortable procedures</p>
+                <p className="font-bold text-foreground">Clinical Efficacy</p>
+                <p className="text-sm text-muted-foreground">Proven results backed by research</p>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-in fade-in slide-in-from-top-4 duration-700 delay-100 hover:translate-y-1 transition-transform cursor-pointer">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-primary">✓</div>
               <div>
-                <p className="font-bold text-foreground">Faster Results</p>
-                <p className="text-sm text-muted-foreground">Accelerated treatment time</p>
+                <p className="font-bold text-foreground">Safety Standards</p>
+                <p className="text-sm text-muted-foreground">ISO certified & international protocols</p>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-in fade-in slide-in-from-right-4 duration-700 delay-200 hover:-translate-x-2 transition-transform cursor-pointer">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-primary">✓</div>
               <div>
-                <p className="font-bold text-foreground">Precision Accuracy</p>
-                <p className="text-sm text-muted-foreground">Optimal alignment results</p>
+                <p className="font-bold text-foreground">Personalized Care</p>
+                <p className="text-sm text-muted-foreground">Customized treatment for your goals</p>
               </div>
             </div>
           </div>

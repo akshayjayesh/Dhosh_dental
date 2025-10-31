@@ -10,36 +10,36 @@ const testimonials = [
     name: "Sarah Johnson",
     location: "Kochi",
     rating: 5,
-    text: "Outstanding experience! The team was professional and the treatment results exceeded my expectations. Highly recommended!",
-    image: "/smiling-woman-portrait-professional.jpg",
+    text: "Outstanding experience with my skin transformation! The team was professional and the results exceeded my expectations.",
+    image: "/professional-woman-portrait-confident-smile.jpg",
   },
   {
     name: "Rajesh Kumar",
     location: "Thiruvananthapuram",
     rating: 5,
-    text: "Best orthodontic clinic in Kerala. The clear aligners were comfortable and effective. Very satisfied with the results.",
-    image: "/smiling-man-portrait-professional.jpg",
+    text: "Best aesthetic clinic in Kerala. My smile makeover was incredible and comfortable. Very satisfied!",
+    image: "/professional-man-portrait-smiling-confident.jpg",
   },
   {
     name: "Priya Sharma",
     location: "Ernakulathappan",
     rating: 5,
-    text: "Dr Niyaz Nazeer is incredibly skilled. The entire staff is courteous and the clinic is state-of-the-art. Worth every penny!",
-    image: "/happy-woman-face-portrait-smiling.jpg",
+    text: "Dr. Priya Sharma is incredibly skilled. State-of-the-art technology with courteous staff. Worth every rupee!",
+    image: "/female-professional-headshot-friendly-smile.jpg",
   },
   {
     name: "Arun Menon",
     location: "Kozhikode",
     rating: 5,
-    text: "Fantastic treatment journey. The technology used is impressive and the results are remarkable. Thank you!",
-    image: "/confident-man-smiling-professional-portrait.jpg",
+    text: "Fantastic aesthetic journey. My skin looks radiant and healthy. The holistic approach really works!",
+    image: "/male-professional-portrait-friendly-expression.jpg",
   },
   {
     name: "Lisa Anna",
     location: "Thrissur",
     rating: 5,
-    text: "Extremely professional team. The EMI options made treatment affordable. My smile transformation is incredible!",
-    image: "/cheerful-woman-face-portrait-smiling.jpg",
+    text: "Extremely professional team with flexible payment options. My confidence has skyrocketed!",
+    image: "/female-professional-portrait-radiant-smile.jpg",
   },
 ]
 
@@ -75,7 +75,7 @@ export default function Testimonials() {
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Patient Testimonials</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Real stories from our happy patients</p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Real success stories from our clients</p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
@@ -114,8 +114,8 @@ export default function Testimonials() {
               {/* Before/After Comparison */}
               <div className="relative h-80 rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:scale-105">
                 <img
-                  src="/before-after-dental-teeth-transformation-smile-com.jpg"
-                  alt="Before and after smile transformation"
+                  src="/aesthetic-before-after-skin-transformation.jpg"
+                  alt="Before and after aesthetic transformation"
                   className="w-full h-full object-cover transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

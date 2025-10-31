@@ -7,12 +7,12 @@ import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react"
 export default function Hero() {
   const [displayText, setDisplayText] = useState("")
   const [currentSlide, setCurrentSlide] = useState(0)
-  const fullText = "Transform Your Smile with Advanced Aligner & Braces Technology"
+  const fullText = "Transform Your Beauty with Holistic Aesthetic & Dental Care"
 
   const heroImages = [
-    "/professional-dentist-with-patient-smiling-dental-c.jpg",
-    "/clear-dental-aligners-transparent-braces.jpg",
-    "/metal-braces-dental-orthodontic-treatment.jpg",
+    "/beautiful-skin-aesthetic-treatment-results.jpg",
+    "/modern-aesthetic-clinic-interior-professional-sett.jpg",
+    "/patient-receiving-dermatology-laser-treatment.jpg",
   ]
 
   useEffect(() => {
@@ -57,11 +57,11 @@ export default function Hero() {
                 <span className="text-primary animate-pulse">|</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-                Kerala's Premier Orthodontic Care | 6 Locations
+                Where Grace Meets Glow | Complete Wellness Solutions
               </p>
               <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-8 animate-pulse">
                 <span className="text-2xl">★★★★★</span>
-                <span>4.9/5 • 10,000+ Happy Smiles</span>
+                <span>4.9/5 • 5,000+ Happy Clients</span>
               </div>
             </div>
 
@@ -74,11 +74,11 @@ export default function Hero() {
                 Get Free Consultation
               </Button>
               <Button
-                onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg bg-transparent transition-all duration-300"
               >
-                View Our Branches
+                Explore Our Services
               </Button>
             </div>
           </div>

@@ -6,22 +6,22 @@ import { Card } from "@/components/ui/card"
 
 const services = [
   {
-    title: "Clear Aligners",
-    description: "Invisible, removable aligners for a discreet straightening journey",
-    price: "₹45,000 - ₹2,00,000",
-    image: "/clear-dental-aligners-transparent-braces.jpg",
+    title: "Acne Treatment",
+    description: "Advanced acne solutions for clear, healthy skin",
+    price: "₹5,000 - ₹25,000",
+    image: "/acne-treatment-clear-skin-dermatology.jpg",
   },
   {
-    title: "Metal Braces",
-    description: "Traditional, durable and highly effective orthodontic solution",
-    price: "₹30,000 - ₹1,50,000",
-    image: "/metal-braces-dental-orthodontic-treatment.jpg",
+    title: "Botox & Fillers",
+    description: "Professional anti-aging treatments for natural results",
+    price: "₹10,000 - ₹40,000",
+    image: "/botox-filler-treatment-aesthetic-clinic.jpg",
   },
   {
-    title: "Ceramic Braces",
-    description: "Tooth-colored braces that blend naturally with your smile",
-    price: "₹60,000 - ₹2,50,000",
-    image: "/ceramic-braces-tooth-colored-orthodontic.jpg",
+    title: "Laser Hair Reduction",
+    description: "Permanent hair reduction with latest laser technology",
+    price: "₹8,000 - ₹35,000",
+    image: "/laser-hair-removal-treatment.jpg",
   },
 ]
 
@@ -38,9 +38,9 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Services</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Featured Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive orthodontic solutions tailored to your needs
+            Our most popular aesthetic and dental treatments
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
