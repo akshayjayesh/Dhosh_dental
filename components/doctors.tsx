@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 
 const doctors = [
   {
-    name: "Dr. Niyaz Nazeer Sait",
+    name: "Dr. Niyaz",
     title: "Chief Orthodontist & Founder",
     qualifications: "BDS, MDS, PGDHE, FFAC",
     specialization: "Aligner Alveolary Orthodontist & Dental Implantologist",
@@ -18,7 +18,7 @@ const doctors = [
     experience: "20+ years",
   },
   {
-    name: "Dr. Babitha Merin George",
+    name: "Dr. Merin George",
     title: "Senior Orthodontist",
     qualifications: "BDS, MDS, MSHCH",
     specialization: "Dental and Dentosilical Orthodontist",
@@ -29,7 +29,7 @@ const doctors = [
     experience: "15+ years",
   },
   {
-    name: "Dr. Clint Andrews",
+    name: "Dr. Andrews",
     title: "Chief Dentist & RCT Specialist",
     qualifications: "BDS",
     specialization: "Chief Dentist & Consultant RCT & Sleep Specialist",
@@ -40,7 +40,7 @@ const doctors = [
     experience: "12+ years",
   },
   {
-    name: "Dr. Farhat Amin Sait",
+    name: "Dr. Amin Sait",
     title: "Aligner Specialist",
     qualifications: "BDS",
     specialization: "Chief Dentist & Aligner Specialist",
@@ -51,18 +51,18 @@ const doctors = [
     experience: "10+ years",
   },
   {
-    name: "Dr. Labeeba Shaharban",
+    name: "Dr. Shaharban",
     title: "General Dentist",
     qualifications: "BDS, FCI",
     specialization: "General Dentistry",
     phone: "+91 98765 43214",
-    email: "dr.labeeba@clinic.com",
+    email: "dr.ba@clinic.com",
     locations: ["Kottayam"],
     image: "/professional-dentist-with-patient-smiling-dental-c.jpg",
     experience: "8+ years",
   },
   {
-    name: "Dr. Amal Ramesh",
+    name: "Dr. Ramesh",
     title: "General Dentist & Therapist",
     qualifications: "BDS",
     specialization: "General Dental & Dental Therapist",
@@ -73,7 +73,7 @@ const doctors = [
     experience: "7+ years",
   },
   {
-    name: "Dr. Mohammed Hashim",
+    name: "Dr. Hashim",
     title: "General Dentist",
     qualifications: "BDS",
     specialization: "General Dentistry",
@@ -84,7 +84,7 @@ const doctors = [
     experience: "6+ years",
   },
   {
-    name: "Dr. Hena Francis",
+    name: "Dr. Francis",
     title: "General Dentist",
     qualifications: "BDS",
     specialization: "General Dentistry",
