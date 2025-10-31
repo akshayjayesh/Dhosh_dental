@@ -90,7 +90,7 @@ export default function Services() {
         {/* Additional Services Carousel */}
         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10 hover:border-primary/30 transition-all shadow-lg">
           <h3 className="text-2xl font-bold text-foreground mb-6">Additional Services</h3>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 text-center">
             {[
               "Power Chains",
               "Rapid Palatal Expanders",

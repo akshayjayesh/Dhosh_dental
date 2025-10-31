@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-bold group-hover:text-primary transition-colors">ASPIRE</h3>
-                <p className="text-xs text-gray-300">Orthodontic Care</p>
+                <p className="text-xs text-gray-300">DENTAL CLINIC</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed hover:text-gray-100 transition-colors">
