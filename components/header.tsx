@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,14 +31,21 @@ export default function Header() {
         isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <button
           onClick={() => document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })}
-          className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          className="flex items-center gap-3 hover:opacity-80 transition-opacity group"
         >
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-lg">DN</span>
+          <div className="relative w-12 h-12">
+            <Image
+              src="/logo-mascot.png"
+              alt="Dr Niyaz Nazeer's Dental Clinic"
+              width={48}
+              height={48}
+              className="object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300 shadow-none rounded-4xl"
+              priority
+            />
           </div>
           <div className="hidden sm:block">
             <h1 className="text-lg font-bold text-primary">Dr Niyaz Nazeer</h1>
