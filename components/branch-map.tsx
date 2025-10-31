@@ -28,7 +28,7 @@ export default function BranchMap({ branches, selectedBranch }: BranchMapProps) 
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-full"
+        className="h-full w-[101%]"
       />
     </div>
   )
