@@ -18,7 +18,7 @@ export default function Footer() {
                 <span className="text-white font-bold">AP</span>
               </div>
               <div>
-                <h3 className="font-bold group-hover:text-primary transition-colors">Dr Niyaz Nazeer</h3>
+                <h3 className="font-bold group-hover:text-primary transition-colors">ASPIRE</h3>
                 <p className="text-xs text-gray-300">Orthodontic Care</p>
               </div>
             </div>
