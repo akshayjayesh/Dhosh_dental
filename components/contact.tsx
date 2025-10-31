@@ -252,7 +252,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Email</p>
-                    <p className="font-bold text-primary">hello@drniyaz.com</p>
+                    <p className="font-bold text-primary">hello@dr.com</p>
                   </div>
                 </a>
 
