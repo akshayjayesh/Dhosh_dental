@@ -18,7 +18,7 @@ export default function Footer() {
                 <span className="text-white font-bold">AP</span>
               </div>
               <div>
-                <h3 className="font-bold group-hover:text-primary transition-colors text-left">ASPIRE</h3>
+                <h3 className="font-bold group-hover:text-primary transition-colors text-left">DR.DINAKS</h3>
                 <p className="text-xs text-gray-300">DENTAL CLINIC</p>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Niyaz Nazeer's. All rights reserved.</p>
+          <p className="text-sm text-gray-300">&copy; 2025 Dr Dinaks family dental clinic. All rights reserved.</p>
           <div className="flex gap-4">
             <a
               href="https://facebook.com"
