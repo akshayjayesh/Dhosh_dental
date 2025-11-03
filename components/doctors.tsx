@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 
 const doctors = [
   {
-    name: "Dr. Niyaz",
+    name: "Dr. Abid",
     title: "Chief Orthodontist & Founder",
     qualifications: "BDS, MDS, PGDHE, FFAC",
     specialization: "Aligner Alveolary Orthodontist & Dental Implantologist",
@@ -18,7 +18,7 @@ const doctors = [
     experience: "20+ years",
   },
   {
-    name: "Dr. Merin George",
+    name: "Dr. George",
     title: "Senior Orthodontist",
     qualifications: "BDS, MDS, MSHCH",
     specialization: "Dental and Dentosilical Orthodontist",
@@ -40,7 +40,7 @@ const doctors = [
     experience: "12+ years",
   },
   {
-    name: "Dr. Amin Sait",
+    name: "Dr. Amin",
     title: "Aligner Specialist",
     qualifications: "BDS",
     specialization: "Chief Dentist & Aligner Specialist",
