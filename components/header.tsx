@@ -48,8 +48,8 @@ export default function Header() {
             />
           </div>
           <div className="hidden sm:block">
-            <h1 className="text-lg font-bold text-primary">ASPIRE</h1>
-            <p className="text-xs text-muted-foreground">DENTAL CARE</p>
+            <h1 className="text-lg font-bold text-primary">DR DINAKS</h1>
+            <p className="text-xs text-muted-foreground">FAMILY DENTAL CLINIC</p>
           </div>
         </button>
 
