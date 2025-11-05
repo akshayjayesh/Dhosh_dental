@@ -24,7 +24,7 @@ const testimonials = [
     name: "Priya Sharma",
     location: "Ernakulathappan",
     rating: 5,
-    text: "Dr Niyaz Nazeer is incredibly skilled. The entire staff is courteous and the clinic is state-of-the-art. Worth every penny!",
+    text: "Dr is incredibly skilled. The entire staff is courteous and the clinic is state-of-the-art. Worth every penny!",
     image: "/happy-woman-face-portrait-smiling.jpg",
   },
   {
