@@ -173,7 +173,7 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Niyaz Nazeer's. All rights reserved.</p>
+          <p className="text-sm text-gray-300">&copy; 2025 Aspire Denyal clinic. All rights reserved.</p>
           <div className="flex gap-4">
             <a
               href="https://facebook.com"
