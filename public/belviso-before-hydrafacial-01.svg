@@ -1,11 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
   <defs>
-    <linearGradient id="g7" x1="0" x2="1">
+    <linearGradient id="bg7" x1="0" x2="1">
       <stop offset="0" stop-color="#f7fbff" />
       <stop offset="1" stop-color="#e8f5ff" />
     </linearGradient>
   </defs>
-  <rect width="100%" height="100%" fill="url(#g7)" />
-  <text x="50%" y="48%" font-family="Poppins, Arial, sans-serif" font-size="56" fill="#0a3550" text-anchor="middle">Before — Hydrafacial / Medical Facial</text>
-  <text x="50%" y="58%" font-family="Inter, Arial, sans-serif" font-size="28" fill="#123a57" text-anchor="middle">Dull, dehydrated skin • congestion visible</text>
+  <rect width="100%" height="100%" fill="url(#bg7)" />
+
+  <g transform="translate(520,180)">
+    <rect x="60" y="80" width="560" height="720" rx="36" fill="#f0e8df" />
+    <circle cx="340" cy="260" r="92" fill="#e7c39a" />
+    <rect x="180" y="420" width="320" height="160" rx="16" fill="#cfc5b4" opacity="0.28" />
+  </g>
+
+  <g transform="translate(960,80)">
+    <rect x="-740" y="840" width="1480" height="240" rx="8" fill="#ffffff" opacity="0.88" />
+    <text x="0" y="920" font-family="Poppins, sans-serif" font-size="44" fill="#0a3550" text-anchor="middle">Before — Hydrafacial / Medical Facial</text>
+    <text x="0" y="972" font-family="Inter, sans-serif" font-size="22" fill="#123a57" text-anchor="middle">Dull, dehydrated skin • visible congestion • clinical photo</text>
+  </g>
 </svg>
