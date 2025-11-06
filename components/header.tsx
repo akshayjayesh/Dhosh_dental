@@ -40,7 +40,7 @@ export default function Header() {
           <div className="relative w-12 h-12">
             <Image
               src="/logo-mascot.png"
-              alt="Grace And Glow - Aesthetic & Dental Clinic"
+              alt="Ghosh's Dental Studio"
               width={48}
               height={48}
               className="object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300 shadow-none rounded-4xl"
@@ -69,7 +69,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+919876543210"
+            href="tel:+9196876543210"
             className="flex items-center gap-2 text-primary hover:text-primary/80 transition-all hover:scale-105"
           >
             <Phone size={20} />
