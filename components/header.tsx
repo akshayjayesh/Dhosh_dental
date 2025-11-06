@@ -48,7 +48,7 @@ export default function Header() {
             />
           </div>
           <div className="hidden sm:block">
-            <h1 className="text-lg font-bold text-primary">Grace And Glow</h1>
+            <h1 className="text-lg font-bold text-primary">Ghosh's Dental Studio</h1>
             <p className="text-xs text-muted-foreground">Aesthetic & Dental Care</p>
           </div>
         </button>
@@ -73,7 +73,7 @@ export default function Header() {
             className="flex items-center gap-2 text-primary hover:text-primary/80 transition-all hover:scale-105"
           >
             <Phone size={20} />
-            <span className="font-semibold">+91 98765 43210</span>
+            <span className="font-semibold">+91 98765 743210</span>
           </a>
           <Button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
