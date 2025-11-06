@@ -1,11 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
   <defs>
-    <linearGradient id="g1" x1="0" x2="1">
-      <stop offset="0" stop-color="#e6f2ff" />
-      <stop offset="1" stop-color="#cfe9ff" />
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#f3f7fb" />
+      <stop offset="1" stop-color="#e9f2fb" />
     </linearGradient>
   </defs>
-  <rect width="100%" height="100%" fill="url(#g1)" />
-  <text x="50%" y="48%" font-family="Poppins, Arial, sans-serif" font-size="56" fill="#0b2540" text-anchor="middle">Before — Anti-aging (Botox/Fillers)</text>
-  <text x="50%" y="58%" font-family="Inter, Arial, sans-serif" font-size="28" fill="#15324a" text-anchor="middle">Clinical look • natural lighting • patient-consent</text>
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- stylized South Asian portrait -->
+  <g transform="translate(540,180)">
+    <ellipse cx="360" cy="380" rx="300" ry="380" fill="#e4c4a3" />
+    <path d="M60 260 C60 120 660 120 660 260 L660 420 C660 520 520 620 360 620 C200 620 60 520 60 420 Z" fill="#3b2b20" opacity="0.95" />
+    <ellipse cx="260" cy="360" rx="40" ry="28" fill="#2b1f17" />
+    <ellipse cx="460" cy="360" rx="40" ry="28" fill="#2b1f17" />
+    <path d="M280 480 C320 520 400 520 440 480" stroke="#6a4630" stroke-width="8" fill="none" stroke-linecap="round" />
+  </g>
+
+  <g transform="translate(960,80)">
+    <rect x="-740" y="840" width="1480" height="240" rx="8" fill="#ffffff" opacity="0.85" />
+    <text x="0" y="920" font-family="Poppins, sans-serif" font-size="46" fill="#0b2540" text-anchor="middle">Before — Anti-aging (Botox/Fillers)</text>
+    <text x="0" y="972" font-family="Inter, sans-serif" font-size="22" fill="#15324a" text-anchor="middle">South Asian subject • clinical lighting • patient-consent</text>
+  </g>
 </svg>
