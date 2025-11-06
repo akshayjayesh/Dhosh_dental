@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff7f0" />
+      <stop offset="1" stop-color="#ffe6d6" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g2)" />
+  <text x="50%" y="48%" font-family="Poppins, Arial, sans-serif" font-size="56" fill="#3b2f2f" text-anchor="middle">After — Anti-aging (Botox/Fillers)</text>
+  <text x="50%" y="58%" font-family="Inter, Arial, sans-serif" font-size="28" fill="#58403b" text-anchor="middle">Soft, realistic improvement • clinical lighting</text>
+</svg>

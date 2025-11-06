@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
+  <defs>
+    <linearGradient id="g10" x1="0" x2="1">
+      <stop offset="0" stop-color="#f7fff7" />
+      <stop offset="1" stop-color="#e6ffea" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g10)" />
+  <text x="50%" y="48%" font-family="Poppins, Arial, sans-serif" font-size="56" fill="#153424" text-anchor="middle">After — Acne Treatment</text>
+  <text x="50%" y="58%" font-family="Inter, Arial, sans-serif" font-size="28" fill="#224f36" text-anchor="middle">Reduced inflammation • clearer skin • realistic texture</text>
+</svg>

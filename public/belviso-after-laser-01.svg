@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff9f9" />
+      <stop offset="1" stop-color="#ffecec" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g4)" />
+  <text x="50%" y="48%" font-family="Poppins, Arial, sans-serif" font-size="56" fill="#3a2020" text-anchor="middle">After — Laser Resurfacing (Pigmentation)</text>
+  <text x="50%" y="58%" font-family="Inter, Arial, sans-serif" font-size="28" fill="#513737" text-anchor="middle">Smoother, more even tone • realistic pores retained</text>
+</svg>
