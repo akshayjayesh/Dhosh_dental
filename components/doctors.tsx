@@ -7,18 +7,18 @@ import { Phone, Mail, MapPin } from "lucide-react"
 
 const doctors = [
   {
-    name: "Dr. Priya Sharma",
+    name: "Dr. A.K. Ghosh",
     title: "Chief Orthodontist & Founder",
     qualifications: "BDS, MDS, PGDHE, FFAC",
     specialization: "Aligner Alveolary Orthodontist & Dental Implantologist",
-    phone: "+91 98765 43210",
+    phone: "+91 958765 43210",
     email: "dr.priya@clinic.com",
-    locations: ["Kochi Main", "Thiruvananthapuram"],
+    locations: ["Kannur", "Thalassery"],
     image: "/doctor-female-smiling-dental-professional.jpg",
     experience: "20+ years",
   },
   {
-    name: "Dr. Anjali Patel",
+    name: "Dr. Shylaja Ghosh",
     title: "Senior Orthodontist",
     qualifications: "BDS, MDS, MSHCH",
     specialization: "Dental and Dentosilical Orthodontist",
