@@ -10,7 +10,7 @@ export default function FloatingActions() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919876543210?text=Hello%20Dr%20Niyaz%20Nazeer's,%20I%20would%20like%20to%20book%20an%20appointment"
+        href="https://wa.me/919876543210?text=Hello%20Dr%Ghosh's,%20I%20would%20like%20to%20book%20an%20appointment"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed left-8 bottom-8 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 z-40 animate-bounce group"
