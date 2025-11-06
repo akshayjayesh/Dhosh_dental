@@ -20,6 +20,7 @@ export default function Header() {
   const navItems = [
     { label: "Home", id: "home" },
     { label: "Services", id: "services" },
+    { label: "Facial Cosmetics", id: "belviso" },
     { label: "Doctors", id: "doctors" },
     { label: "Branches", id: "branches" },
     { label: "Contact", id: "contact" },
@@ -50,6 +51,7 @@ export default function Header() {
           <div className="hidden sm:block">
             <h1 className="text-lg font-bold text-primary">DR DINAKS</h1>
             <p className="text-xs text-muted-foreground">FAMILY DENTAL CLINIC</p>
+            <p className="text-[10px] text-muted-foreground">Belviso Facial Cosmetic Centre • Complete Dental & Facial Aesthetics</p>
           </div>
         </button>
 
