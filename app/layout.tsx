@@ -11,7 +11,8 @@ const _inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "DR DINAKS FAMILY DENTAL CLINIC",
-  description: "Transform your smile with advanced aligner & braces technology. 6 locations across Kerala.",
+  description:
+    "Complete Dental & Facial Aesthetics — Advanced aligners, braces, and Belviso Facial Cosmetic Centre services across Kerala.",
   generator: "v0.app",
 }
 
@@ -23,6 +24,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth text-center">
       <body className={`font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalBusiness",
+              name: "DR DINAKS Family Dental Clinic & Belviso Facial Cosmetic Centre",
+              url: "https://example.com",
+              department: [
+                { "@type": "Dentist", name: "Dental Care" },
+                { "@type": "MedicalSpa", name: "Belviso Facial Cosmetic Centre" }
+              ],
+              areaServed: "Kerala, India",
+              medicalSpecialty: ["Dentistry", "CosmeticDermatology"],
+            }),
+          }}
+          aria-hidden="true"
+        />
         {children}
         <Analytics />
       </body>
