@@ -1,11 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
   <defs>
-    <linearGradient id="g4" x1="0" x2="1">
-      <stop offset="0" stop-color="#fff9f9" />
-      <stop offset="1" stop-color="#ffecec" />
+    <linearGradient id="bg4" x1="0" x2="1">
+      <stop offset="0" stop-color="#fffaf9" />
+      <stop offset="1" stop-color="#fff2ec" />
     </linearGradient>
   </defs>
-  <rect width="100%" height="100%" fill="url(#g4)" />
-  <text x="50%" y="48%" font-family="Poppins, Arial, sans-serif" font-size="56" fill="#3a2020" text-anchor="middle">After — Laser Resurfacing (Pigmentation)</text>
-  <text x="50%" y="58%" font-family="Inter, Arial, sans-serif" font-size="28" fill="#513737" text-anchor="middle">Smoother, more even tone • realistic pores retained</text>
+  <rect width="100%" height="100%" fill="url(#bg4)" />
+
+  <g transform="translate(520,200)">
+    <rect x="40" y="60" width="640" height="820" rx="40" fill="#fff0e1" />
+    <circle cx="360" cy="300" r="120" fill="#f2c9a8" />
+    <rect x="160" y="440" width="400" height="200" rx="18" fill="#f9d9c2" opacity="0.6" />
+  </g>
+
+  <g transform="translate(960,80)">
+    <rect x="-740" y="840" width="1480" height="240" rx="8" fill="#fff" opacity="0.9" />
+    <text x="0" y="920" font-family="Poppins, sans-serif" font-size="44" fill="#3a2020" text-anchor="middle">After — Laser Resurfacing (Pigmentation)</text>
+    <text x="0" y="972" font-family="Inter, sans-serif" font-size="22" fill="#513737" text-anchor="middle">Smoother, more even tone • realistic skin texture preserved</text>
+  </g>
 </svg>
