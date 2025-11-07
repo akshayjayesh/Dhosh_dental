@@ -72,11 +72,12 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+919447045560"
-            className="flex items-center gap-2 text-primary hover:text-primary/80 transition-all hover:scale-105"
+            href={`tel:${PHONE_DIAL}`}
+            aria-label={`Call ${PHONE}`}
+            className="flex items-center justify-center w-10 h-10 rounded-full text-primary hover:bg-primary/5 transition-all hover:scale-105"
           >
             <Phone size={20} />
-            <span className="font-semibold">+91 94470 45560</span>
+            <span className="sr-only">{PHONE}</span>
           </a>
           <Button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
