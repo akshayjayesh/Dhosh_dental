@@ -31,7 +31,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
-              name: "Ghosh's Dental Studio & Belviso Facial Cosmetic Centre",
+              name: `${BRAND_NAME} & Belviso Facial Cosmetic Centre`,
               url: "https://example.com",
               department: [
                 { "@type": "Dentist", name: "Dental Care" },
