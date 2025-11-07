@@ -259,7 +259,7 @@ export default function Contact() {
 
               <div className="space-y-4">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919447045560"
                   className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-lg transition-all cursor-pointer group hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-lg flex items-center justify-center transition-all">
