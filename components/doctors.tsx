@@ -11,7 +11,7 @@ const doctors = [
     title: "Chief Orthodontist & Founder",
     qualifications: "BDS, MDS, PGDHE, FFAC",
     specialization: "Aligner Alveolary Orthodontist & Dental Implantologist",
-    phone: "+91 98765 43210",
+    phone: "+91 94470 45560",
     email: "dr.niyaz@clinic.com",
     locations: ["Kochi Main", "Thiruvananthapuram"],
     image: "/professional-dentist-with-patient-smiling-dental-c.jpg",
