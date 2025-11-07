@@ -30,8 +30,8 @@ const pairs: Pair[] = [
     category: "Facial contouring",
     treatment: "Thread Lift",
     sessions: "1 session",
-    before: "/belviso-before-tightening-01.svg",
-    after: "/belviso-after-tightening-01.svg",
+    before: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F42174657e8a642d1960e503e51422b45?format=webp&width=800",
+    after: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F4cc4345eb3a84a928722ecdce35eb4f7?format=webp&width=800",
   },
   {
     category: "Acne treatment",
