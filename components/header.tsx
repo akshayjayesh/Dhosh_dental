@@ -76,7 +76,7 @@ export default function Header() {
             className="flex items-center gap-2 text-primary hover:text-primary/80 transition-all hover:scale-105"
           >
             <Phone size={20} />
-            <span className="font-semibold">+91 98765 43210</span>
+            <span className="font-semibold">+91 94470 45560</span>
           </a>
           <Button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
