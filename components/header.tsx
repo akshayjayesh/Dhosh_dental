@@ -49,7 +49,7 @@ export default function Header() {
               priority
             />
           </div>
-          <div className="hidden sm:block">
+          <div className="block sm:block">
             <h1 className="text-lg font-bold text-primary">{BRAND_NAME}</h1>
             <p className="text-xs text-muted-foreground" />
             <p className="text-[10px] text-muted-foreground">Belviso Facial Cosmetic Centre • Complete Dental & Facial Aesthetics</p>
