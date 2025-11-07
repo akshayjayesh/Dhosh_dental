@@ -51,8 +51,8 @@ const pairs: Pair[] = [
     category: "Facial contouring",
     treatment: "RF Tightening",
     sessions: "4–6 sessions",
-    before: "/belviso-before-contour-01.svg",
-    after: "/belviso-after-contour-01.svg",
+    before: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F65aa67f02e64455080e00a2f992c1c05?format=webp&width=800",
+    after: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F2657e30426124ab0a29b71684319aa57?format=webp&width=800",
   },
 ]
 
