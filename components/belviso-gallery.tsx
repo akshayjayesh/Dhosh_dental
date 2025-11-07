@@ -16,8 +16,8 @@ const pairs: Pair[] = [
     category: "Anti-aging",
     treatment: "Botox + Fillers",
     sessions: "1–2 sessions",
-    before: "/belviso-before-anti-aging-01.svg",
-    after: "/belviso-after-anti-aging-01.svg",
+    before: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F0b3d9f6b8155491dacbe8015abe64389?format=webp&width=800",
+    after: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F121491a06b8e4346ac0d3abc7c60929b?format=webp&width=800",
   },
   {
     category: "Skin treatments",
