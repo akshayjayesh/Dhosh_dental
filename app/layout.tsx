@@ -10,9 +10,9 @@ const _poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "70
 const _inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DR DINAKS FAMILY DENTAL CLINIC",
+  title: "Ghosh's Dental Studio",
   description:
-    "Complete Dental & Facial Aesthetics — Advanced aligners, braces, and Belviso Facial Cosmetic Centre services across Kerala.",
+    "Ghosh's Dental Studio — Complete Dental & Facial Aesthetics including Belviso Facial Cosmetic Centre services across Kerala.",
   generator: "v0.app",
 }
 
