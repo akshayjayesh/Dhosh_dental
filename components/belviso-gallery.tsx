@@ -44,8 +44,8 @@ const pairs: Pair[] = [
     category: "Skin treatments",
     treatment: "Hydrafacial",
     sessions: "Monthly",
-    before: "/belviso-before-hydrafacial-01.svg",
-    after: "/belviso-after-hydrafacial-01.svg",
+    before: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fff3d97fd666e4aad8e28b164fdbe232c?format=webp&width=800",
+    after: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Ff4318684a3594d7dbf907ae00a93b1b3?format=webp&width=800",
   },
   {
     category: "Facial contouring",
