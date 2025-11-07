@@ -50,7 +50,7 @@ export default function Header() {
           </div>
           <div className="hidden sm:block">
             <h1 className="text-lg font-bold text-primary">Ghosh's Dental Studio</h1>
-            <p className="text-xs text-muted-foreground">Complete Dental & Facial Aesthetics</p>
+            <p className="text-xs text-muted-foreground" />
             <p className="text-[10px] text-muted-foreground">Belviso Facial Cosmetic Centre • Complete Dental & Facial Aesthetics</p>
           </div>
         </button>
