@@ -23,8 +23,8 @@ const pairs: Pair[] = [
     category: "Skin treatments",
     treatment: "Laser Resurfacing",
     sessions: "2–4 sessions",
-    before: "/belviso-before-laser-01.svg",
-    after: "/belviso-after-laser-01.svg",
+    before: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fae049f8dc6094ca885989a7ec784fff5?format=webp&width=800",
+    after: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fcac2de833629495cb30dbd45297babe7?format=webp&width=800",
   },
   {
     category: "Facial contouring",
