@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { BRAND_NAME, LOGO_SRC, PHONE } from "@/lib/site"
+import { BRAND_NAME, LOGO_SRC, PHONE, PHONE_DIAL } from "@/lib/site"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
