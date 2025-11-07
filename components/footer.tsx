@@ -18,8 +18,8 @@ export default function Footer() {
                 <span className="text-white font-bold">AP</span>
               </div>
               <div>
-                <h3 className="font-bold group-hover:text-primary transition-colors text-left">DR.DINAKS</h3>
-                <p className="text-xs text-gray-300">DENTAL CLINIC</p>
+                <h3 className="font-bold group-hover:text-primary transition-colors text-left">DR.GHOSH</h3>
+                <p className="text-xs text-gray-300">DENTAL STUDIO</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed hover:text-gray-100 transition-colors">
