@@ -9,10 +9,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
 const _inter = Inter({ subsets: ["latin"] })
 
+import { BRAND_NAME } from "@/lib/site"
+
 export const metadata: Metadata = {
-  title: "Ghosh's Dental Studio",
-  description:
-    "Ghosh's Dental Studio — Complete Dental & Facial Aesthetics including Belviso Facial Cosmetic Centre services across Kerala.",
+  title: BRAND_NAME,
+  description: `${BRAND_NAME} — Complete Dental & Facial Aesthetics including Belviso Facial Cosmetic Centre services across Kerala.`,
   generator: "v0.app",
 }
 
