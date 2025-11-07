@@ -267,7 +267,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Call Us</p>
-                    <p className="font-bold text-primary">+91 98765 43210</p>
+                    <p className="font-bold text-primary">+91 94470 45560</p>
                   </div>
                 </a>
 
