@@ -11,13 +11,28 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    serviceType: "Dental Care",
     branch: "",
     service: "",
     date: "",
     time: "",
   })
 
-  const services = ["Clear Aligners", "Metal Braces", "Ceramic Braces", "Consultation", "Other"]
+  const dentalServices = ["Clear Aligners", "Metal Braces", "Ceramic Braces", "Consultation", "Other"]
+  const facialServices = [
+    "Anti-Aging (Botox/Fillers)",
+    "Laser Treatments",
+    "Advanced Facials",
+    "Skin Tightening",
+    "Dermaplaning/Microdermabrasion",
+    "PRP Therapy",
+  ]
+  const services =
+    formData.serviceType === "Dental Care"
+      ? dentalServices
+      : formData.serviceType === "Facial Cosmetics"
+      ? facialServices
+      : [...dentalServices, ...facialServices]
   const timeSlots = ["9:00 AM", "10:00 AM", "11:00 AM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"]
 
   const handleNext = () => {
@@ -114,6 +129,19 @@ export default function Contact() {
                 {/* Step 2 */}
                 {formStep === 2 && (
                   <div className="space-y-6 animate-in fade-in">
+                    <div>
+                      <label className="block text-sm font-semibold text-foreground mb-3">Service Type</label>
+                      <select
+                        aria-label="Select service type"
+                        className="w-full px-4 py-3 border-2 border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all hover:border-primary/50 cursor-pointer"
+                        value={formData.serviceType}
+                        onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
+                      >
+                        <option>Dental Care</option>
+                        <option>Facial Cosmetics</option>
+                        <option>Both (Consultation)</option>
+                      </select>
+                    </div>
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-3">
                         Select Your Nearest Branch
@@ -231,7 +259,7 @@ export default function Contact() {
 
               <div className="space-y-4">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919447045560"
                   className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-lg transition-all cursor-pointer group hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-lg flex items-center justify-center transition-all">
@@ -239,7 +267,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Call Us</p>
-                    <p className="font-bold text-primary">+91 98765 43210</p>
+                    <p className="font-bold text-primary">+91 94470 45560</p>
                   </div>
                 </a>
 

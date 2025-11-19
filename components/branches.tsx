@@ -10,7 +10,7 @@ const branches = [
   {
     name: "Kochi Main",
     address: "MG Road, Kochi, Kerala",
-    phone: "+91 98765 43210",
+    phone: "+91 94470 45560",
     hours: "9:00 AM - 8:00 PM",
     coords: { lat: 9.9312, lng: 76.2673 },
     mapUrl:

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { BRAND_NAME, LOGO_SRC, PHONE, PHONE_DIAL } from "@/lib/site"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,6 +21,7 @@ export default function Header() {
   const navItems = [
     { label: "Home", id: "home" },
     { label: "Services", id: "services" },
+    { label: "Facial Cosmetics", id: "belviso" },
     { label: "Doctors", id: "doctors" },
     { label: "Branches", id: "branches" },
     { label: "Contact", id: "contact" },
@@ -39,17 +41,18 @@ export default function Header() {
         >
           <div className="relative w-12 h-12">
             <Image
-              src="/logo-mascot.png"
-              alt="Dr Dinaks Dental Clinic"
+              src={LOGO_SRC}
+              alt={BRAND_NAME}
               width={48}
               height={48}
               className="object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300 shadow-none rounded-4xl"
               priority
             />
           </div>
-          <div className="hidden sm:block">
-            <h1 className="text-lg font-bold text-primary">DR DINAKS</h1>
-            <p className="text-xs text-muted-foreground">FAMILY DENTAL CLINIC</p>
+          <div className="block sm:block">
+            <h1 className="text-lg font-bold text-primary">{BRAND_NAME}</h1>
+            <p className="text-xs text-muted-foreground" />
+            <p className="text-[10px] text-muted-foreground">Belviso Facial Cosmetic Centre • Complete Dental & Facial Aesthetics</p>
           </div>
         </button>
 
@@ -69,11 +72,12 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+919876543210"
-            className="flex items-center gap-2 text-primary hover:text-primary/80 transition-all hover:scale-105"
+            href={`tel:${PHONE_DIAL}`}
+            aria-label={`Call ${PHONE}`}
+            className="flex items-center justify-center w-10 h-10 rounded-full text-primary hover:bg-primary/5 transition-all hover:scale-105"
           >
             <Phone size={20} />
-            <span className="font-semibold">+91 98765 43210</span>
+            <span className="sr-only">{PHONE}</span>
           </a>
           <Button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}

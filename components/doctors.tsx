@@ -11,10 +11,10 @@ const doctors = [
     title: "Chief Orthodontist & Founder",
     qualifications: "BDS, MDS, PGDHE, FFAC",
     specialization: "Aligner Alveolary Orthodontist & Dental Implantologist",
-    phone: "+91 98765 43210",
+    phone: "+91 94470 45560",
     email: "dr.niyaz@clinic.com",
     locations: ["Kochi Main", "Thiruvananthapuram"],
-    image: "/professional-dentist-with-patient-smiling-dental-c.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fb102da237b80440abbd5f8140df01ad3?format=webp&width=800",
     experience: "20+ years",
   },
   {
@@ -25,7 +25,7 @@ const doctors = [
     phone: "+91 98765 43211",
     email: "dr.babitha@clinic.com",
     locations: ["Kochi Main", "Thrissur"],
-    image: "/clear-dental-aligners-transparent-braces.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F76aea0e9125a4ccb8da2436d848a3dfd?format=webp&width=800",
     experience: "15+ years",
   },
   {
@@ -36,7 +36,7 @@ const doctors = [
     phone: "+91 98765 43212",
     email: "dr.clint@clinic.com",
     locations: ["Kozhikode"],
-    image: "/metal-braces-dental-orthodontic-treatment.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F703e19e82f404300a68106c3c1b3897b?format=webp&width=800",
     experience: "12+ years",
   },
   {
@@ -47,7 +47,7 @@ const doctors = [
     phone: "+91 98765 43213",
     email: "dr.farhat@clinic.com",
     locations: ["Ernakulathappan"],
-    image: "/ceramic-braces-tooth-colored-orthodontic.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fd9813784f3ae40ac9bf09b1326563ddb?format=webp&width=800",
     experience: "10+ years",
   },
   {
@@ -58,7 +58,7 @@ const doctors = [
     phone: "+91 98765 43214",
     email: "dr.ba@clinic.com",
     locations: ["Kottayam"],
-    image: "/professional-dentist-with-patient-smiling-dental-c.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fb102da237b80440abbd5f8140df01ad3?format=webp&width=800",
     experience: "8+ years",
   },
   {
@@ -69,7 +69,7 @@ const doctors = [
     phone: "+91 98765 43215",
     email: "dr.amal@clinic.com",
     locations: ["Kochi Main"],
-    image: "/clear-dental-aligners-transparent-braces.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F76aea0e9125a4ccb8da2436d848a3dfd?format=webp&width=800",
     experience: "7+ years",
   },
   {
@@ -80,7 +80,7 @@ const doctors = [
     phone: "+91 98765 43216",
     email: "dr.hashim@clinic.com",
     locations: ["Kozhikode"],
-    image: "/metal-braces-dental-orthodontic-treatment.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F703e19e82f404300a68106c3c1b3897b?format=webp&width=800",
     experience: "6+ years",
   },
   {
@@ -91,7 +91,7 @@ const doctors = [
     phone: "+91 98765 43217",
     email: "dr.hena@clinic.com",
     locations: ["Thiruvananthapuram"],
-    image: "/ceramic-braces-tooth-colored-orthodontic.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fd9813784f3ae40ac9bf09b1326563ddb?format=webp&width=800",
     experience: "5+ years",
   },
 ]
