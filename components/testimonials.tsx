@@ -66,7 +66,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-white to-red-50 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
       </div>
@@ -81,7 +81,7 @@ export default function Testimonials() {
 
         {/* Carousel */}
         <div className="relative">
-          <Card className="p-12 shadow-2xl bg-gradient-to-br from-white to-blue-50/50 hover:shadow-3xl transition-all duration-300">
+          <Card className="p-12 shadow-2xl bg-gradient-to-br from-white to-red-50/50 hover:shadow-3xl transition-all duration-300">
             <div className="grid md:grid-cols-2 gap-8 items-center min-h-80">
               {/* Testimonial Content */}
               <div className="animate-in fade-in duration-500 space-y-4">
