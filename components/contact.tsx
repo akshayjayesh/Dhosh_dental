@@ -45,6 +45,23 @@ export default function Contact() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
+        {/* Map Section */}
+        <div className="mb-16">
+          <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-96 lg:h-[500px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1234567890!2d75.4833!3d11.7469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5c7a7a7a7a7a7%3A0x1234567890abcdef!2sThangal%20Palace%2C%20Thalassery!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+              title="Ghosh's Dental Studio - Thalassery Location"
+            />
+          </Card>
+        </div>
+
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
