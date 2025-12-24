@@ -57,7 +57,7 @@ export default function Hero() {
                 <span className="text-primary animate-pulse">|</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-                Kerala's Premier Orthodontic Care | 6 Locations
+                Kerala's Premier Orthodontic Care
               </p>
               <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-8 animate-pulse">
                 <span className="text-2xl">★★★★★</span>
