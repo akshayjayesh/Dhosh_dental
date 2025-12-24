@@ -255,16 +255,32 @@ export default function Contact() {
                 <p className="text-sm font-semibold text-foreground mb-3">Working Hours</p>
                 <div className="space-y-1 text-sm">
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
-                    <span className="text-muted-foreground">Mon - Sat:</span>{" "}
-                    <span className="font-semibold">9:00 AM - 8:00 PM</span>
+                    <span className="text-muted-foreground">Wednesday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Thursday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Friday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Saturday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
                     <span className="text-muted-foreground">Sunday:</span>{" "}
-                    <span className="font-semibold text-green-600">Closed</span>
+                    <span className="font-semibold">11:30 AM - 5:00 PM</span>
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
-                    <span className="text-muted-foreground">Status:</span>{" "}
-                    <span className="font-semibold text-green-600 animate-pulse">Open Now</span>
+                    <span className="text-muted-foreground">Monday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Tuesday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
                   </p>
                 </div>
               </div>
