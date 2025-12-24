@@ -1,6 +1,6 @@
 export const BRAND_NAME = "Ghosh's Dental Studio"
 export const BRAND_LEGACY = "DR DINAKS"
-export const LOGO_SRC = "/logo-mascot.png"
-export const LEGACY_LOGO_SRC = "/logo-mascot.png"
+export const LOGO_SRC = "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fbc64039380c24b609f2a167fa750a5cc?format=webp&width=800"
+export const LEGACY_LOGO_SRC = "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fbc64039380c24b609f2a167fa750a5cc?format=webp&width=800"
 export const PHONE = "+91 94470 45560"
 export const PHONE_DIAL = "+919447045560"
