@@ -125,7 +125,21 @@ export default function Services() {
                       hoveredCard === idx ? "scale-110 brightness-110" : "scale-100 brightness-100"
                     }`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div
+                    className="absolute inset-0"
+                    style={
+                      service.overlayImage
+                        ? {
+                            backgroundImage: `url(${service.overlayImage})`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundSize: "cover",
+                          }
+                        : {
+                            backgroundImage: "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)",
+                          }
+                    }
+                  />
                 </div>
 
                 {/* Content */}
