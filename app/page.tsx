@@ -30,7 +30,6 @@ export default function Home() {
     <main className="overflow-hidden">
       <Header />
       <Hero />
-      <Branches />
       <Services />
       <Doctors />
       <Technology />
@@ -38,6 +37,7 @@ export default function Home() {
       <Testimonials />
       <Timeline />
       <BeforeAfter />
+      <Branches />
       <Contact />
       <Footer />
       <FloatingActions />
