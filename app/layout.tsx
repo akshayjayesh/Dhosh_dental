@@ -31,14 +31,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
-              name: `${BRAND_NAME} & Belviso Facial Cosmetic Centre`,
+              name: BRAND_NAME,
               url: "https://example.com",
               department: [
-                { "@type": "Dentist", name: "Dental Care" },
-                { "@type": "MedicalSpa", name: "Belviso Facial Cosmetic Centre" }
+                { "@type": "Dentist", name: "Dental Care" }
               ],
               areaServed: "Kerala, India",
-              medicalSpecialty: ["Dentistry", "CosmeticDermatology"],
+              medicalSpecialty: ["Dentistry"],
             }),
           }}
           aria-hidden="true"
