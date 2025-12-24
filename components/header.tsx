@@ -22,7 +22,6 @@ export default function Header() {
     { label: "Home", id: "home" },
     { label: "Services", id: "services" },
     { label: "Doctors", id: "doctors" },
-    { label: "Branches", id: "branches" },
     { label: "Contact", id: "contact" },
   ]
 
