@@ -141,17 +141,22 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Additional Services Carousel */}
+        {/* Complementary Treatments */}
         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10 hover:border-primary/30 transition-all shadow-lg">
-          <h3 className="text-2xl font-bold text-foreground mb-6">Additional Services</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-3">Specialized Treatments & Support</h3>
+          <p className="text-muted-foreground mb-6">
+            Beyond our core services, we offer specialized support treatments including:
+          </p>
           <div className="flex flex-wrap gap-4 text-center">
             {[
-              "Power Chains",
+              "Power Chains & Auxiliaries",
               "Rapid Palatal Expanders",
-              "Retainers",
-              "Emergency Repairs",
-              "Teeth Whitening",
-              "Orthodontic Checkup",
+              "Orthodontic Retainers",
+              "Emergency Dental Repairs",
+              "Professional Teeth Whitening",
+              "Orthodontic Checkups",
+              "Cosmetic Bonding",
+              "Bite Correction",
             ].map((service, idx) => (
               <button
                 key={idx}
