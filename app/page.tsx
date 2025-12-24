@@ -32,12 +32,6 @@ export default function Home() {
       <Hero />
       <Branches />
       <Services />
-      {/* Facial Cosmetics */}
-      <BelvisoHero />
-      <FacialServices />
-      <BelvisoGallery />
-      <BelvisoWhyChoose />
-      <BelvisoTestimonials />
       <Doctors />
       <Technology />
       <PatientCare />
