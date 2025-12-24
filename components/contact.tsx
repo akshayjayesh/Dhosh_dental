@@ -116,24 +116,6 @@ export default function Contact() {
                 {formStep === 2 && (
                   <div className="space-y-6 animate-in fade-in">
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-3">
-                        Select Your Nearest Branch
-                      </label>
-                      <select
-                        className="w-full px-4 py-3 border-2 border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all hover:border-primary/50 cursor-pointer"
-                        value={formData.branch}
-                        onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
-                      >
-                        <option value="">Choose a branch</option>
-                        <option value="Kochi">Kochi Main</option>
-                        <option value="TVM">Thiruvananthapuram</option>
-                        <option value="Kozhikode">Kozhikode</option>
-                        <option value="Ernakulathappan">Ernakulathappan</option>
-                        <option value="Thrissur">Thrissur</option>
-                        <option value="Kottayam">Kottayam</option>
-                      </select>
-                    </div>
-                    <div>
                       <label className="block text-sm font-semibold text-foreground mb-4">
                         What Service Do You Need?
                       </label>
