@@ -57,14 +57,6 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Branches
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
