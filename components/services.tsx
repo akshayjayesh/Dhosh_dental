@@ -6,10 +6,64 @@ import { Card } from "@/components/ui/card"
 
 const services = [
   {
-    title: "Clear Aligners",
-    description: "Invisible, removable aligners for a discreet straightening journey",
-    price: "₹45,000 - ₹2,00,000",
+    title: "Digital Dentistry",
+    description: "Advanced digital scanning, 3D imaging, and CAD-CAM technology for precise treatments",
+    price: "₹5,000 - ₹50,000",
+    image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+  },
+  {
+    title: "Smile Design",
+    description: "Personalized smile makeovers using latest cosmetic dentistry techniques",
+    price: "₹50,000 - ₹3,00,000",
+    image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+  },
+  {
+    title: "Veneers & Teeth Whitening",
+    description: "Aesthetic solutions for tooth color correction and porcelain veneers for perfect smiles",
+    price: "₹20,000 - ₹2,00,000",
+    image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+  },
+  {
+    title: "Dental Implants",
+    description: "Permanent tooth replacement using latest implant technology - Immediate, Delayed & Basal options",
+    price: "₹80,000 - ₹5,00,000",
+    image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
+  },
+  {
+    title: "Root Canals, Crowns & Bridges",
+    description: "Restorative treatments to save teeth and restore missing teeth with precision",
+    price: "₹15,000 - ₹2,50,000",
+    image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+  },
+  {
+    title: "Invisalign Aligners",
+    description: "Nearly invisible aligners for comfortable and effective teeth straightening",
+    price: "₹2,50,000 - ₹4,50,000",
     image: "/clear-dental-aligners-transparent-braces.jpg",
+  },
+  {
+    title: "Micro Implant Orthodontic Treatment",
+    description: "Advanced orthodontic solution using micro-implants for superior results",
+    price: "₹1,50,000 - ₹3,50,000",
+    image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
+  },
+  {
+    title: "Paediatric Dentistry",
+    description: "Specialized dental care for children with gentle, child-friendly approach",
+    price: "₹2,000 - ₹30,000",
+    image: "https://images.pexels.com/photos/8260438/pexels-photo-8260438.jpeg",
+  },
+  {
+    title: "Conservative Dentistry",
+    description: "Teeth preservation techniques including fillings and minimal invasive treatments",
+    price: "₹1,000 - ₹50,000",
+    image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
+  },
+  {
+    title: "Periodontology (Gum Disease)",
+    description: "Comprehensive gum disease treatment and periodontal care for healthy gums",
+    price: "₹5,000 - ₹1,00,000",
+    image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
   },
   {
     title: "Metal Braces",
