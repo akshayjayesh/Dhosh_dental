@@ -99,11 +99,80 @@ const consultants = [
   },
 ]
 
-const allDoctors = [...mainDoctors, ...consultants]
+function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDoctor, setHoveredCard }: any) {
+  return (
+    <div
+      key={idx}
+      onMouseEnter={() => {
+        setHoveredCard(idx)
+        setSelectedDoctor(idx)
+      }}
+      onMouseLeave={() => setHoveredCard(null)}
+      className="group cursor-pointer h-full"
+    >
+      <Card
+        className={`overflow-hidden h-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
+          selectedDoctor === idx ? "ring-2 ring-primary" : ""
+        }`}
+      >
+        {/* Image Container */}
+        <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+          <img
+            src={doctor.image || "/placeholder.svg"}
+            alt={doctor.name}
+            className={`w-full h-full object-cover transition-all duration-300 ${
+              hoveredCard === idx ? "scale-110" : "scale-100"
+            }`}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+          <Badge className="absolute top-3 right-3 bg-primary/90">{doctor.experience}</Badge>
+        </div>
+
+        {/* Content */}
+        <div className="p-4 space-y-3">
+          <div>
+            <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
+            <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
+          </div>
+
+          <div className="text-xs">
+            <p className="text-muted-foreground mb-2">{doctor.qualifications}</p>
+            <p className="text-xs text-gray-600 line-clamp-2">{doctor.specialization}</p>
+          </div>
+
+          {/* Contact Icons */}
+          <div className="flex gap-2 pt-2 border-t">
+            <a
+              href={`tel:${doctor.phone}`}
+              className="flex-1 flex items-center justify-center p-2 bg-primary/10 hover:bg-primary/20 rounded transition-all text-primary hover:scale-110"
+              title="Call"
+            >
+              <Phone size={16} />
+            </a>
+            <a
+              href={`mailto:${doctor.email}`}
+              className="flex-1 flex items-center justify-center p-2 bg-primary/10 hover:bg-primary/20 rounded transition-all text-primary hover:scale-110"
+              title="Email"
+            >
+              <Mail size={16} />
+            </a>
+            <div className="flex-1 flex items-center justify-center p-2 bg-primary/10 hover:bg-primary/20 rounded transition-all text-primary hover:scale-110 cursor-pointer">
+              <MapPin size={16} />
+            </div>
+          </div>
+        </div>
+      </Card>
+    </div>
+  )
+}
 
 export default function Doctors() {
   const [selectedDoctor, setSelectedDoctor] = useState<number | null>(null)
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<"main" | "consultant">("main")
+
+  const allDoctors = selectedCategory === "main" ? mainDoctors : consultants
+  const selectedDoctorData = allDoctors[selectedDoctor ?? 0]
 
   return (
     <section id="doctors" className="py-20 bg-gradient-to-b from-red-50 via-white to-red-100">
@@ -117,121 +186,89 @@ export default function Doctors() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
+        {/* Category Tabs */}
+        <div className="flex gap-4 mb-12 justify-center">
+          <button
+            onClick={() => {
+              setSelectedCategory("main")
+              setSelectedDoctor(null)
+              setHoveredCard(null)
+            }}
+            className={`px-8 py-3 rounded-lg font-semibold transition-all ${
+              selectedCategory === "main"
+                ? "bg-primary text-white shadow-lg"
+                : "bg-white border-2 border-primary text-primary hover:bg-primary/5"
+            }`}
+          >
+            Principal Dentists ({mainDoctors.length})
+          </button>
+          <button
+            onClick={() => {
+              setSelectedCategory("consultant")
+              setSelectedDoctor(null)
+              setHoveredCard(null)
+            }}
+            className={`px-8 py-3 rounded-lg font-semibold transition-all ${
+              selectedCategory === "consultant"
+                ? "bg-primary text-white shadow-lg"
+                : "bg-white border-2 border-primary text-primary hover:bg-primary/5"
+            }`}
+          >
+            Consultants ({consultants.length})
+          </button>
+        </div>
+
         {/* Doctor Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {doctors.map((doctor, idx) => (
-            <div
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {allDoctors.map((doctor, idx) => (
+            <DoctorCard
               key={idx}
-              onMouseEnter={() => {
-                setHoveredCard(idx)
-                setSelectedDoctor(idx)
-              }}
-              onMouseLeave={() => setHoveredCard(null)}
-              className="group cursor-pointer h-full"
-            >
-              <Card
-                className={`overflow-hidden h-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
-                  selectedDoctor === idx ? "ring-2 ring-primary" : ""
-                }`}
-              >
-                {/* Image Container */}
-                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-                  <img
-                    src={doctor.image || "/placeholder.svg"}
-                    alt={doctor.name}
-                    className={`w-full h-full object-cover transition-all duration-300 ${
-                      hoveredCard === idx ? "scale-110" : "scale-100"
-                    }`}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <Badge className="absolute top-3 right-3 bg-primary/90">{doctor.experience}</Badge>
-                </div>
-
-                {/* Content */}
-                <div className="p-4 space-y-3">
-                  <div>
-                    <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
-                    <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
-                  </div>
-
-                  <div className="text-xs">
-                    <p className="text-muted-foreground mb-2">{doctor.qualifications}</p>
-                    <p className="text-xs text-gray-600 line-clamp-2">{doctor.specialization}</p>
-                  </div>
-
-                  {/* Contact Icons */}
-                  <div className="flex gap-2 pt-2 border-t">
-                    <a
-                      href={`tel:${doctor.phone}`}
-                      className="flex-1 flex items-center justify-center p-2 bg-primary/10 hover:bg-primary/20 rounded transition-all text-primary hover:scale-110"
-                      title="Call"
-                    >
-                      <Phone size={16} />
-                    </a>
-                    <a
-                      href={`mailto:${doctor.email}`}
-                      className="flex-1 flex items-center justify-center p-2 bg-primary/10 hover:bg-primary/20 rounded transition-all text-primary hover:scale-110"
-                      title="Email"
-                    >
-                      <Mail size={16} />
-                    </a>
-                    <div className="flex-1 flex items-center justify-center p-2 bg-primary/10 hover:bg-primary/20 rounded transition-all text-primary hover:scale-110 cursor-pointer">
-                      <MapPin size={16} />
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </div>
+              doctor={doctor}
+              idx={idx}
+              selectedDoctor={selectedDoctor}
+              hoveredCard={hoveredCard}
+              setSelectedDoctor={setSelectedDoctor}
+              setHoveredCard={setHoveredCard}
+            />
           ))}
         </div>
 
         {/* Highlighted Featured Doctor */}
-        {selectedDoctor !== null && (
+        {selectedDoctor !== null && selectedDoctorData && (
           <div className="mt-12 animate-in fade-in slide-in-from-bottom-4 duration-300">
             <Card className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/20">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <img
-                  src={doctors[selectedDoctor].image || "/placeholder.svg"}
-                  alt={doctors[selectedDoctor].name}
+                  src={selectedDoctorData.image || "/placeholder.svg"}
+                  alt={selectedDoctorData.name}
                   className="w-full h-80 object-cover rounded-xl shadow-lg"
                 />
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-3xl font-bold text-foreground mb-2">{doctors[selectedDoctor].name}</h3>
-                    <p className="text-lg text-primary font-semibold mb-1">{doctors[selectedDoctor].title}</p>
-                    <p className="text-muted-foreground mb-4">{doctors[selectedDoctor].experience} of Experience</p>
+                    <h3 className="text-3xl font-bold text-foreground mb-2">{selectedDoctorData.name}</h3>
+                    <p className="text-lg text-primary font-semibold mb-1">{selectedDoctorData.title}</p>
+                    <p className="text-muted-foreground mb-4">{selectedDoctorData.experience} of Experience</p>
                   </div>
 
                   <div>
                     <p className="font-semibold text-foreground mb-2">Qualifications:</p>
-                    <p className="text-muted-foreground mb-4">{doctors[selectedDoctor].qualifications}</p>
+                    <p className="text-muted-foreground mb-4">{selectedDoctorData.qualifications}</p>
                   </div>
 
                   <div>
                     <p className="font-semibold text-foreground mb-2">Specialization:</p>
-                    <p className="text-muted-foreground mb-4">{doctors[selectedDoctor].specialization}</p>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Available At:</p>
-                    <div className="flex flex-wrap gap-2">
-                      {doctors[selectedDoctor].locations.map((loc, idx) => (
-                        <Badge key={idx} variant="secondary">
-                          {loc}
-                        </Badge>
-                      ))}
-                    </div>
+                    <p className="text-muted-foreground mb-4">{selectedDoctorData.specialization}</p>
                   </div>
 
                   <div className="flex gap-4 pt-4">
                     <a
-                      href={`tel:${doctors[selectedDoctor].phone}`}
+                      href={`tel:${selectedDoctorData.phone}`}
                       className="flex-1 bg-primary hover:bg-primary/90 text-white font-semibold py-3 rounded-lg transition-all hover:shadow-lg text-center"
                     >
                       Call Now
                     </a>
                     <a
-                      href={`mailto:${doctors[selectedDoctor].email}`}
+                      href={`mailto:${selectedDoctorData.email}`}
                       className="flex-1 bg-accent/20 hover:bg-accent/30 text-accent font-semibold py-3 rounded-lg transition-all hover:shadow-lg text-center"
                     >
                       Email
