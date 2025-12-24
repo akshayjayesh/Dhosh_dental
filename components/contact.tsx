@@ -11,7 +11,6 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    serviceType: "Dental Care",
     branch: "",
     service: "",
     date: "",
