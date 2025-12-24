@@ -5,11 +5,6 @@ import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Branches from "@/components/branches"
 import Services from "@/components/services"
-import BelvisoHero from "@/components/belviso-hero"
-import FacialServices from "@/components/facial-services"
-import BelvisoGallery from "@/components/belviso-gallery"
-import BelvisoWhyChoose from "@/components/belviso-why-choose"
-import BelvisoTestimonials from "@/components/belviso-testimonials"
 import Doctors from "@/components/doctors"
 import Technology from "@/components/technology"
 import PatientCare from "@/components/patient-care"
@@ -35,20 +30,14 @@ export default function Home() {
     <main className="overflow-hidden">
       <Header />
       <Hero />
-      <Branches />
       <Services />
-      {/* Facial Cosmetics */}
-      <BelvisoHero />
-      <FacialServices />
-      <BelvisoGallery />
-      <BelvisoWhyChoose />
-      <BelvisoTestimonials />
       <Doctors />
       <Technology />
       <PatientCare />
       <Testimonials />
       <Timeline />
       <BeforeAfter />
+      <Branches />
       <Contact />
       <Footer />
       <FloatingActions />

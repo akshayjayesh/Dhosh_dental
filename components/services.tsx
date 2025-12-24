@@ -6,10 +6,70 @@ import { Card } from "@/components/ui/card"
 
 const services = [
   {
-    title: "Clear Aligners",
-    description: "Invisible, removable aligners for a discreet straightening journey",
-    price: "₹45,000 - ₹2,00,000",
+    title: "Digital Dentistry",
+    description: "Advanced digital scanning, 3D imaging, and CAD-CAM technology for precise treatments",
+    price: "₹5,000 - ₹50,000",
+    image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Feeca2d2d8a1e417c9ceedf9d169d7e59?format=webp",
+  },
+  {
+    title: "Smile Design",
+    description: "Personalized smile makeovers using latest cosmetic dentistry techniques",
+    price: "₹50,000 - ₹3,00,000",
+    image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F3e2396c3f46a45d7a928ada4cce0e004?format=webp",
+  },
+  {
+    title: "Veneers & Teeth Whitening",
+    description: "Aesthetic solutions for tooth color correction and porcelain veneers for perfect smiles",
+    price: "₹20,000 - ₹2,00,000",
+    image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fedf5475b84ab40d081a02f4980a547f5?format=webp",
+  },
+  {
+    title: "Dental Implants",
+    description: "Permanent tooth replacement using latest implant technology - Immediate, Delayed & Basal options",
+    price: "₹80,000 - ₹5,00,000",
+    image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F8e44efcebbc045f09b824bfe62709a5e",
+  },
+  {
+    title: "Root Canals, Crowns & Bridges",
+    description: "Restorative treatments to save teeth and restore missing teeth with precision",
+    price: "₹15,000 - ₹2,50,000",
+    image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F26f0ecea13894920885b7796607bf1a6",
+  },
+  {
+    title: "Invisalign Aligners",
+    description: "Nearly invisible aligners for comfortable and effective teeth straightening",
+    price: "₹2,50,000 - ₹4,50,000",
     image: "/clear-dental-aligners-transparent-braces.jpg",
+  },
+  {
+    title: "Micro Implant Orthodontic Treatment",
+    description: "Advanced orthodontic solution using micro-implants for superior results",
+    price: "₹1,50,000 - ₹3,50,000",
+    image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F99b6e8ff88bf4a9da5e5aefee4a6d0b3?format=webp",
+  },
+  {
+    title: "Paediatric Dentistry",
+    description: "Specialized dental care for children with gentle, child-friendly approach",
+    price: "₹2,000 - ₹30,000",
+    image: "https://images.pexels.com/photos/8260438/pexels-photo-8260438.jpeg",
+  },
+  {
+    title: "Conservative Dentistry",
+    description: "Teeth preservation techniques including fillings and minimal invasive treatments",
+    price: "₹1,000 - ₹50,000",
+    image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
+  },
+  {
+    title: "Periodontology (Gum Disease)",
+    description: "Comprehensive gum disease treatment and periodontal care for healthy gums",
+    price: "₹5,000 - ₹1,00,000",
+    image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
   },
   {
     title: "Metal Braces",
@@ -38,15 +98,15 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Services</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Comprehensive Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive orthodontic solutions tailored to your needs
+            Complete dental solutions from cosmetic to restorative care, orthodontics to periodontal treatments
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, idx) => (
             <div
               key={idx}
@@ -65,7 +125,21 @@ export default function Services() {
                       hoveredCard === idx ? "scale-110 brightness-110" : "scale-100 brightness-100"
                     }`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div
+                    className="absolute inset-0"
+                    style={
+                      service.overlayImage
+                        ? {
+                            backgroundImage: `url(${service.overlayImage})`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundSize: "cover",
+                          }
+                        : {
+                            backgroundImage: "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)",
+                          }
+                    }
+                  />
                 </div>
 
                 {/* Content */}
@@ -87,17 +161,22 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Additional Services Carousel */}
+        {/* Complementary Treatments */}
         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10 hover:border-primary/30 transition-all shadow-lg">
-          <h3 className="text-2xl font-bold text-foreground mb-6">Additional Services</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-3">Specialized Treatments & Support</h3>
+          <p className="text-muted-foreground mb-6">
+            Beyond our core services, we offer specialized support treatments including:
+          </p>
           <div className="flex flex-wrap gap-4 text-center">
             {[
-              "Power Chains",
+              "Power Chains & Auxiliaries",
               "Rapid Palatal Expanders",
-              "Retainers",
-              "Emergency Repairs",
-              "Teeth Whitening",
-              "Orthodontic Checkup",
+              "Orthodontic Retainers",
+              "Emergency Dental Repairs",
+              "Professional Teeth Whitening",
+              "Orthodontic Checkups",
+              "Cosmetic Bonding",
+              "Bite Correction",
             ].map((service, idx) => (
               <button
                 key={idx}
