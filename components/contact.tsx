@@ -244,8 +244,8 @@ export default function Contact() {
                     <MapPin className="text-primary" size={24} />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground">Main Branch</p>
-                    <p className="font-bold text-foreground text-sm">MG Road, Kochi</p>
+                    <p className="text-xs text-muted-foreground">Location</p>
+                    <p className="font-bold text-foreground text-sm">Thangal Palace, AVK Nair Road, Pilakool, Thalassery, Kerala 670101</p>
                   </div>
                 </div>
               </div>
