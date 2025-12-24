@@ -13,7 +13,7 @@ import { BRAND_NAME } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: BRAND_NAME,
-  description: `${BRAND_NAME} — Complete Dental & Facial Aesthetics including Belviso Facial Cosmetic Centre services across Kerala.`,
+  description: `${BRAND_NAME} — Premier Dental Care & Orthodontics with advanced aligner and braces technology across Kerala.`,
   generator: "v0.app",
 }
 
