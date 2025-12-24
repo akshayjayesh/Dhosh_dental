@@ -10,30 +10,35 @@ const services = [
     description: "Advanced digital scanning, 3D imaging, and CAD-CAM technology for precise treatments",
     price: "₹5,000 - ₹50,000",
     image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Feeca2d2d8a1e417c9ceedf9d169d7e59?format=webp",
   },
   {
     title: "Smile Design",
     description: "Personalized smile makeovers using latest cosmetic dentistry techniques",
     price: "₹50,000 - ₹3,00,000",
     image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F3e2396c3f46a45d7a928ada4cce0e004?format=webp",
   },
   {
     title: "Veneers & Teeth Whitening",
     description: "Aesthetic solutions for tooth color correction and porcelain veneers for perfect smiles",
     price: "₹20,000 - ₹2,00,000",
     image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fedf5475b84ab40d081a02f4980a547f5?format=webp",
   },
   {
     title: "Dental Implants",
     description: "Permanent tooth replacement using latest implant technology - Immediate, Delayed & Basal options",
     price: "₹80,000 - ₹5,00,000",
     image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F8e44efcebbc045f09b824bfe62709a5e",
   },
   {
     title: "Root Canals, Crowns & Bridges",
     description: "Restorative treatments to save teeth and restore missing teeth with precision",
     price: "₹15,000 - ₹2,50,000",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F26f0ecea13894920885b7796607bf1a6",
   },
   {
     title: "Invisalign Aligners",
@@ -46,6 +51,7 @@ const services = [
     description: "Advanced orthodontic solution using micro-implants for superior results",
     price: "₹1,50,000 - ₹3,50,000",
     image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F99b6e8ff88bf4a9da5e5aefee4a6d0b3?format=webp",
   },
   {
     title: "Paediatric Dentistry",
