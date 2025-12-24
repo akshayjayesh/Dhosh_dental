@@ -21,7 +21,6 @@ export default function Header() {
   const navItems = [
     { label: "Home", id: "home" },
     { label: "Services", id: "services" },
-    { label: "Facial Cosmetics", id: "belviso" },
     { label: "Doctors", id: "doctors" },
     { label: "Branches", id: "branches" },
     { label: "Contact", id: "contact" },
