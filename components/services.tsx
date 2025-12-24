@@ -115,9 +115,9 @@ export default function Services() {
               className="group cursor-pointer animate-in fade-in slide-in-from-bottom-4 duration-700"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <Card className="overflow-hidden h-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3">
+              <Card className="overflow-hidden h-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 flex flex-col">
                 {/* Image Container */}
-                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex-shrink-0">
                   <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
@@ -143,7 +143,7 @@ export default function Services() {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 relative">
+                <div className="p-6 relative flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
@@ -151,7 +151,7 @@ export default function Services() {
                   <p className="text-lg font-bold text-primary mb-6">{service.price}</p>
                   <Button
                     onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                    className="w-full bg-primary hover:bg-primary/90 text-white transition-all hover:shadow-lg"
+                    className="w-full bg-primary hover:bg-primary/90 text-white transition-all hover:shadow-lg mt-auto"
                   >
                     Book Now
                   </Button>
