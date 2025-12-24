@@ -92,15 +92,15 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Services</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Comprehensive Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive orthodontic solutions tailored to your needs
+            Complete dental solutions from cosmetic to restorative care, orthodontics to periodontal treatments
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, idx) => (
             <div
               key={idx}
