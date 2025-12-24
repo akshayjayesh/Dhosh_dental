@@ -109,7 +109,7 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Dinaks family dental clinic. All rights reserved.</p>
+          <p className="text-sm text-gray-300">&copy; 2025 Dr Ghosh's dental Studio. All rights reserved.</p>
           <div className="flex gap-4">
             <a
               href="https://facebook.com"
