@@ -105,44 +105,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Branches */}
-          <div>
-            <h4 className="font-bold mb-4">Branches</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Kochi Main
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Thiruvananthapuram
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Kozhikode
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  More...
-                </button>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Newsletter */}
