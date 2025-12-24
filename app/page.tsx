@@ -36,7 +36,6 @@ export default function Home() {
       <Testimonials />
       <Timeline />
       <BeforeAfter />
-      <Branches />
       <Contact />
       <Footer />
       <FloatingActions />
