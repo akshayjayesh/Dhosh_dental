@@ -73,13 +73,6 @@ export default function Hero() {
               >
                 Get Free Consultation
               </Button>
-              <Button
-                onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg bg-transparent transition-all duration-300"
-              >
-                View Our Branches
-              </Button>
             </div>
           </div>
 
