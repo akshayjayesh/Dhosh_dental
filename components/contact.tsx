@@ -116,19 +116,6 @@ export default function Contact() {
                 {formStep === 2 && (
                   <div className="space-y-6 animate-in fade-in">
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-3">Service Type</label>
-                      <select
-                        aria-label="Select service type"
-                        className="w-full px-4 py-3 border-2 border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all hover:border-primary/50 cursor-pointer"
-                        value={formData.serviceType}
-                        onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
-                      >
-                        <option>Dental Care</option>
-                        <option>Facial Cosmetics</option>
-                        <option>Both (Consultation)</option>
-                      </select>
-                    </div>
-                    <div>
                       <label className="block text-sm font-semibold text-foreground mb-3">
                         Select Your Nearest Branch
                       </label>
