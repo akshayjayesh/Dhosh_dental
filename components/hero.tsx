@@ -13,6 +13,7 @@ export default function Hero() {
     "/professional-dentist-with-patient-smiling-dental-c.jpg",
     "/clear-dental-aligners-transparent-braces.jpg",
     "/metal-braces-dental-orthodontic-treatment.jpg",
+    "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fd15cd511c504455595c8c065c6715fb3?format=webp&width=800",
   ]
 
   useEffect(() => {
