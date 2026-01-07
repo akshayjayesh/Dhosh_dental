@@ -15,7 +15,7 @@ const mainDoctors = [
     email: "ashish@ghoshdental.com",
     category: "Main Doctor",
     image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2Fb102da237b80440abbd5f8140df01ad3?format=webp&width=800",
-    experience: "20+ years",
+    experience: "32+ years",
   },
   {
     name: "Dr. SHYLAJA GHOSH",
@@ -26,7 +26,7 @@ const mainDoctors = [
     email: "shylaja@ghoshdental.com",
     category: "Main Doctor",
     image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F76aea0e9125a4ccb8da2436d848a3dfd?format=webp&width=800",
-    experience: "18+ years",
+    experience: "32 years",
   },
   {
     name: "Dr. NANDITHA GHOSH",
@@ -37,7 +37,7 @@ const mainDoctors = [
     email: "nanditha@ghoshdental.com",
     category: "Main Doctor",
     image: "https://cdn.builder.io/api/v1/image/assets%2F9e5464ed21f1499c91aab477b8b54d6e%2F703e19e82f404300a68106c3c1b3897b?format=webp&width=800",
-    experience: "15+ years",
+    experience: "4 years",
   },
 ]
 
@@ -125,7 +125,9 @@ function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDocto
             }`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-          <Badge className="absolute top-3 right-3 bg-primary/90">{doctor.experience}</Badge>
+          {selectedCategory === "main" && (
+            <Badge className="absolute top-3 right-3 bg-primary/90">{doctor.experience}</Badge>
+          )}
         </div>
 
         {/* Content */}
@@ -247,7 +249,9 @@ export default function Doctors() {
                   <div>
                     <h3 className="text-3xl font-bold text-foreground mb-2">{selectedDoctorData.name}</h3>
                     <p className="text-lg text-primary font-semibold mb-1">{selectedDoctorData.title}</p>
-                    <p className="text-muted-foreground mb-4">{selectedDoctorData.experience} of Experience</p>
+                    {selectedCategory === "main" && (
+                      <p className="text-muted-foreground mb-4">{selectedDoctorData.experience} of Experience</p>
+                    )}
                   </div>
 
                   <div>
