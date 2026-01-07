@@ -38,7 +38,7 @@ const services = [
     description: "Advanced restorative treatments for endodontic solutions and tooth preservation",
     price: "₹15,000 - ₹2,50,000",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
-    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F26f0ecea13894920885b7796607bf1a6",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F817636f22fa2430a951983af81dcd29a",
   },
   {
     title: "Invisalign Aligners",
@@ -88,18 +88,21 @@ const services = [
     description: "Durable tooth restoration solutions to replace missing teeth and strengthen damaged ones",
     price: "₹25,000 - ₹2,00,000",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5a01420171dc417e9c42c1c0adc26595",
   },
   {
     title: "Porcelain Fused Ceramic",
     description: "Esthetic and strong crown solutions combining natural appearance with excellent durability",
     price: "₹18,000 - ₹1,50,000",
     image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Ff580c8716b1449448f0fd34bdf35a183",
   },
   {
     title: "Zirconia, E-max, DMLS",
     description: "Premium advanced ceramic materials for superior aesthetics and long-lasting restorations",
     price: "₹35,000 - ₹2,50,000",
     image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fe436909c73654f4793e9649d913f2fae",
   },
 ]
 
