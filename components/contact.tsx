@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
 
 export default function Contact() {
   const [formStep, setFormStep] = useState(1)
@@ -15,6 +15,9 @@ export default function Contact() {
     date: "",
     time: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null)
+  const [submitMessage, setSubmitMessage] = useState("")
 
   const dentalServices = ["Clear Aligners", "Metal Braces", "Ceramic Braces", "Consultation", "Other"]
   const services = dentalServices
@@ -26,6 +29,71 @@ export default function Contact() {
 
   const handlePrev = () => {
     if (formStep > 1) setFormStep(formStep - 1)
+  }
+
+  const validateForm = () => {
+    if (!formData.name.trim()) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please enter your name")
+      return false
+    }
+    if (!formData.phone.trim()) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please enter your phone number")
+      return false
+    }
+    if (!formData.service) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please select a service")
+      return false
+    }
+    if (!formData.date) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please select a date")
+      return false
+    }
+    if (!formData.time) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please select a time")
+      return false
+    }
+    return true
+  }
+
+  const handleSubmit = async () => {
+    if (!validateForm()) return
+
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+    setSubmitMessage("")
+
+    try {
+      const response = await fetch("/api/send-whatsapp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          service: formData.service,
+          date: formData.date,
+          time: formData.time,
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send WhatsApp message")
+      }
+
+      setSubmitStatus("success")
+      setSubmitMessage("Appointment booked! We'll contact you on WhatsApp soon.")
+      setFormData({ name: "", phone: "", service: "", date: "", time: "" })
+      setFormStep(1)
+    } catch (error) {
+      setSubmitStatus("error")
+      setSubmitMessage(error instanceof Error ? error.message : "Something went wrong. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -214,12 +282,34 @@ export default function Contact() {
                   </Button>
                 )}
                 {formStep === 3 && (
-                  <Button className="flex-1 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg py-6 hover:shadow-lg hover:scale-105 transition-all font-semibold">
-                    Book Now
+                  <Button
+                    onClick={handleSubmit}
+                    disabled={isSubmitting}
+                    className="flex-1 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg py-6 hover:shadow-lg hover:scale-105 transition-all font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? "Booking..." : "Book Now"}
                   </Button>
                 )}
               </div>
             </Card>
+
+            {/* Status Messages */}
+            {submitStatus === "success" && (
+              <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg flex gap-3 animate-in fade-in">
+                <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                <div>
+                  <p className="font-semibold text-green-900">{submitMessage}</p>
+                </div>
+              </div>
+            )}
+            {submitStatus === "error" && (
+              <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg flex gap-3 animate-in fade-in">
+                <AlertCircle className="text-red-600 flex-shrink-0" size={20} />
+                <div>
+                  <p className="font-semibold text-red-900">{submitMessage}</p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Contact Info */}
