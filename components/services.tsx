@@ -83,6 +83,24 @@ const services = [
     price: "₹60,000 - ₹2,50,000",
     image: "/ceramic-braces-tooth-colored-orthodontic.jpg",
   },
+  {
+    title: "Crowns & Bridges",
+    description: "Durable tooth restoration solutions to replace missing teeth and strengthen damaged ones",
+    price: "₹25,000 - ₹2,00,000",
+    image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+  },
+  {
+    title: "Porcelain Fused Ceramic",
+    description: "Esthetic and strong crown solutions combining natural appearance with excellent durability",
+    price: "₹18,000 - ₹1,50,000",
+    image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+  },
+  {
+    title: "Zirconia, E-max, DMLS",
+    description: "Premium advanced ceramic materials for superior aesthetics and long-lasting restorations",
+    price: "₹35,000 - ₹2,50,000",
+    image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+  },
 ]
 
 export default function Services() {
