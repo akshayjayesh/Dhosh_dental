@@ -148,7 +148,6 @@ export default function Services() {
                     {service.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 line-clamp-2">{service.description}</p>
-                  <p className="text-lg font-bold text-primary mb-6">{service.price}</p>
                   <Button
                     onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                     className="w-full bg-primary hover:bg-primary/90 text-white transition-all hover:shadow-lg mt-auto"
