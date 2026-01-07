@@ -8,17 +8,17 @@ const cases = [
   {
     title: "Severe Crowding Case",
     treatment: "Clear Aligners",
-    image: "/dental-before-after-crowded-teeth-alignment-transf.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fb43496c7bbe84bcc80c8751f4c2f1bd5",
   },
   {
     title: "Overbite Correction",
     treatment: "Metal Braces",
-    image: "/dental-bite-correction-before-after-orthodontic-tr.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fd9a3b2687db3430982ab09299e49e8cc",
   },
   {
     title: "Aesthetic Enhancement",
     treatment: "Ceramic Braces",
-    image: "/smile-makeover-before-after-dental-treatment-impro.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F9afbbcb292e84af5b8de9574b86cb951",
   },
   {
     title: "Spacing Correction",
@@ -28,12 +28,12 @@ const cases = [
   {
     title: "Complex Case",
     treatment: "Metal Braces",
-    image: "/complex-dental-malocclusion-correction-treatment-r.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F75c5447cca744204b334766cc48f4761",
   },
   {
     title: "Quick Alignment",
     treatment: "Clear Aligners",
-    image: "/teeth-alignment-before-after.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F4c6c018aae394d4882acf0c28a8bc41d",
   },
 ]
 
