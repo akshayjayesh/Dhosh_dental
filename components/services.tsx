@@ -134,6 +134,7 @@ export default function Services() {
               key={idx}
               onMouseEnter={() => setHoveredCard(idx)}
               onMouseLeave={() => setHoveredCard(null)}
+              onClick={() => setSelectedService(idx)}
               className="group cursor-pointer animate-in fade-in slide-in-from-bottom-4 duration-700"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
@@ -171,7 +172,10 @@ export default function Services() {
                   </h3>
                   <p className="text-muted-foreground mb-4 line-clamp-2">{service.description}</p>
                   <Button
-                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                    }}
                     className="w-full bg-primary hover:bg-primary/90 text-white transition-all hover:shadow-lg mt-auto"
                   >
                     Book Now
