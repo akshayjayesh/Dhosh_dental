@@ -214,6 +214,62 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+      {/* Service Details Modal */}
+      {selectedService !== null && (
+        <>
+          {/* Backdrop Blur */}
+          <div
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300"
+            onClick={() => setSelectedService(null)}
+          />
+
+          {/* Modal */}
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
+            <div
+              className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto pointer-events-auto animate-in fade-in scale-in duration-300"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedService(null)}
+                className="sticky top-4 right-4 absolute z-10 p-2 hover:bg-gray-100 rounded-full transition-colors"
+              >
+                <svg className="w-6 h-6 text-gray-600 hover:text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              {/* Image - Full Size */}
+              <div className="relative w-full h-64 bg-gray-100 overflow-hidden">
+                <img
+                  src={services[selectedService].image || "/placeholder.svg"}
+                  alt={services[selectedService].title}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-8">
+                <h2 className="text-3xl font-bold text-foreground mb-3">{services[selectedService].title}</h2>
+                <p className="text-lg text-primary font-semibold mb-4">{services[selectedService].price}</p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">{services[selectedService].description}</p>
+
+                {/* Action Button */}
+                <Button
+                  onClick={() => {
+                    setSelectedService(null)
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                  }}
+                  className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-lg transition-all hover:shadow-lg"
+                >
+                  Book Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </section>
   )
 }
