@@ -282,8 +282,12 @@ export default function Contact() {
                   </Button>
                 )}
                 {formStep === 3 && (
-                  <Button className="flex-1 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg py-6 hover:shadow-lg hover:scale-105 transition-all font-semibold">
-                    Book Now
+                  <Button
+                    onClick={handleSubmit}
+                    disabled={isSubmitting}
+                    className="flex-1 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white text-lg py-6 hover:shadow-lg hover:scale-105 transition-all font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? "Booking..." : "Book Now"}
                   </Button>
                 )}
               </div>
