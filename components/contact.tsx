@@ -292,6 +292,24 @@ export default function Contact() {
                 )}
               </div>
             </Card>
+
+            {/* Status Messages */}
+            {submitStatus === "success" && (
+              <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg flex gap-3 animate-in fade-in">
+                <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                <div>
+                  <p className="font-semibold text-green-900">{submitMessage}</p>
+                </div>
+              </div>
+            )}
+            {submitStatus === "error" && (
+              <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg flex gap-3 animate-in fade-in">
+                <AlertCircle className="text-red-600 flex-shrink-0" size={20} />
+                <div>
+                  <p className="font-semibold text-red-900">{submitMessage}</p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Contact Info */}
