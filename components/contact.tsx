@@ -31,6 +31,71 @@ export default function Contact() {
     if (formStep > 1) setFormStep(formStep - 1)
   }
 
+  const validateForm = () => {
+    if (!formData.name.trim()) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please enter your name")
+      return false
+    }
+    if (!formData.phone.trim()) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please enter your phone number")
+      return false
+    }
+    if (!formData.service) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please select a service")
+      return false
+    }
+    if (!formData.date) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please select a date")
+      return false
+    }
+    if (!formData.time) {
+      setSubmitStatus("error")
+      setSubmitMessage("Please select a time")
+      return false
+    }
+    return true
+  }
+
+  const handleSubmit = async () => {
+    if (!validateForm()) return
+
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+    setSubmitMessage("")
+
+    try {
+      const response = await fetch("/api/send-whatsapp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          service: formData.service,
+          date: formData.date,
+          time: formData.time,
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send WhatsApp message")
+      }
+
+      setSubmitStatus("success")
+      setSubmitMessage("Appointment booked! We'll contact you on WhatsApp soon.")
+      setFormData({ name: "", phone: "", service: "", date: "", time: "" })
+      setFormStep(1)
+    } catch (error) {
+      setSubmitStatus("error")
+      setSubmitMessage(error instanceof Error ? error.message : "Something went wrong. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <section id="contact" className="py-20 bg-white relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
