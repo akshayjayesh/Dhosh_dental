@@ -241,11 +241,26 @@ export default function Services() {
               </button>
 
               {/* Image - Full Size */}
-              <div className="relative w-full h-64 bg-gray-100 overflow-hidden">
+              <div className="relative w-full h-96 bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden">
                 <img
                   src={services[selectedService].image || "/placeholder.svg"}
                   alt={services[selectedService].title}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={
+                    services[selectedService].overlayImage
+                      ? {
+                          backgroundImage: `url(${services[selectedService].overlayImage})`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "center",
+                          backgroundSize: "cover",
+                        }
+                      : {
+                          backgroundImage: "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)",
+                        }
+                  }
                 />
               </div>
 
