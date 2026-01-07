@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
 
 export default function Contact() {
   const [formStep, setFormStep] = useState(1)
@@ -15,6 +15,9 @@ export default function Contact() {
     date: "",
     time: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null)
+  const [submitMessage, setSubmitMessage] = useState("")
 
   const dentalServices = ["Clear Aligners", "Metal Braces", "Ceramic Braces", "Consultation", "Other"]
   const services = dentalServices
