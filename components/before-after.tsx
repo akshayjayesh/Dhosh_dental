@@ -105,6 +105,16 @@ export default function BeforeAfter() {
                     className={`w-full h-full object-cover transition-all duration-500 ${
                       hoveredCard === idx ? "scale-110 brightness-110" : "scale-100 brightness-90"
                     }`}
+                    style={
+                      idx === 0 || idx === 1
+                        ? {
+                            backgroundImage: `url(${caseItem.image})`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundSize: "cover",
+                          }
+                        : undefined
+                    }
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
