@@ -34,8 +34,8 @@ const services = [
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F8e44efcebbc045f09b824bfe62709a5e",
   },
   {
-    title: "Root Canals, Crowns & Bridges",
-    description: "Restorative treatments to save teeth and restore missing teeth with precision",
+    title: "Root Canal, Post, Inlays, Onlays",
+    description: "Advanced restorative treatments for endodontic solutions and tooth preservation",
     price: "₹15,000 - ₹2,50,000",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F26f0ecea13894920885b7796607bf1a6",
