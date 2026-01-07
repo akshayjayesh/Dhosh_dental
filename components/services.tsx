@@ -108,6 +108,7 @@ const services = [
 
 export default function Services() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
+  const [selectedService, setSelectedService] = useState<number | null>(null)
 
   return (
     <section id="services" className="py-20 bg-white relative overflow-hidden">
