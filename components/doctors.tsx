@@ -99,7 +99,7 @@ const consultants = [
   },
 ]
 
-function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDoctor, setHoveredCard }: any) {
+function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDoctor, setHoveredCard, selectedCategory }: any) {
   return (
     <div
       key={idx}
@@ -231,6 +231,7 @@ export default function Doctors() {
               hoveredCard={hoveredCard}
               setSelectedDoctor={setSelectedDoctor}
               setHoveredCard={setHoveredCard}
+              selectedCategory={selectedCategory}
             />
           ))}
         </div>
