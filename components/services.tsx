@@ -34,11 +34,11 @@ const services = [
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F8e44efcebbc045f09b824bfe62709a5e",
   },
   {
-    title: "Root Canals, Crowns & Bridges",
-    description: "Restorative treatments to save teeth and restore missing teeth with precision",
+    title: "Root Canal, Post, Inlays, Onlays",
+    description: "Advanced restorative treatments for endodontic solutions and tooth preservation",
     price: "₹15,000 - ₹2,50,000",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
-    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F26f0ecea13894920885b7796607bf1a6",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F817636f22fa2430a951983af81dcd29a",
   },
   {
     title: "Invisalign Aligners",
@@ -83,6 +83,27 @@ const services = [
     price: "₹60,000 - ₹2,50,000",
     image: "/ceramic-braces-tooth-colored-orthodontic.jpg",
   },
+  {
+    title: "Crowns & Bridges",
+    description: "Durable tooth restoration solutions to replace missing teeth and strengthen damaged ones",
+    price: "₹25,000 - ₹2,00,000",
+    image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5a01420171dc417e9c42c1c0adc26595",
+  },
+  {
+    title: "Porcelain Fused Ceramic",
+    description: "Esthetic and strong crown solutions combining natural appearance with excellent durability",
+    price: "₹18,000 - ₹1,50,000",
+    image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Ff580c8716b1449448f0fd34bdf35a183",
+  },
+  {
+    title: "Zirconia, E-max, DMLS",
+    description: "Premium advanced ceramic materials for superior aesthetics and long-lasting restorations",
+    price: "₹35,000 - ₹2,50,000",
+    image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
+    overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fe436909c73654f4793e9649d913f2fae",
+  },
 ]
 
 export default function Services() {
@@ -100,7 +121,7 @@ export default function Services() {
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Comprehensive Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Complete dental solutions from cosmetic to restorative care, orthodontics to periodontal treatments
+            Complete dental solutions From facial correction to advanced facial aesthetics, orthodontics to periodontal treatments
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
@@ -115,9 +136,9 @@ export default function Services() {
               className="group cursor-pointer animate-in fade-in slide-in-from-bottom-4 duration-700"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <Card className="overflow-hidden h-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3">
+              <Card className="overflow-hidden h-full shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 flex flex-col">
                 {/* Image Container */}
-                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex-shrink-0">
                   <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
@@ -143,15 +164,14 @@ export default function Services() {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 relative">
+                <div className="p-6 relative flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 line-clamp-2">{service.description}</p>
-                  <p className="text-lg font-bold text-primary mb-6">{service.price}</p>
                   <Button
                     onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                    className="w-full bg-primary hover:bg-primary/90 text-white transition-all hover:shadow-lg"
+                    className="w-full bg-primary hover:bg-primary/90 text-white transition-all hover:shadow-lg mt-auto"
                   >
                     Book Now
                   </Button>

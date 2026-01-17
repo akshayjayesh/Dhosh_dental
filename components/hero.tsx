@@ -13,6 +13,7 @@ export default function Hero() {
     "/professional-dentist-with-patient-smiling-dental-c.jpg",
     "/clear-dental-aligners-transparent-braces.jpg",
     "/metal-braces-dental-orthodontic-treatment.jpg",
+    "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fd15cd511c504455595c8c065c6715fb3?format=webp&width=800",
   ]
 
   useEffect(() => {
@@ -57,7 +58,7 @@ export default function Hero() {
                 <span className="text-primary animate-pulse">|</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-                Kerala's Premier Orthodontic Care | 6 Locations
+                Kerala's Premier Smile Design center
               </p>
               <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-8 animate-pulse">
                 <span className="text-2xl">★★★★★</span>
@@ -72,13 +73,6 @@ export default function Hero() {
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 Get Free Consultation
-              </Button>
-              <Button
-                onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg bg-transparent transition-all duration-300"
-              >
-                View Our Branches
               </Button>
             </div>
           </div>

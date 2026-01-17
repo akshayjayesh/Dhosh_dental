@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import Header from "@/components/header"
 import Hero from "@/components/hero"
-import Branches from "@/components/branches"
 import Services from "@/components/services"
 import Doctors from "@/components/doctors"
 import Technology from "@/components/technology"
@@ -37,7 +36,6 @@ export default function Home() {
       <Testimonials />
       <Timeline />
       <BeforeAfter />
-      <Branches />
       <Contact />
       <Footer />
       <FloatingActions />

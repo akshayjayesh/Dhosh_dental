@@ -11,7 +11,6 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    branch: "",
     service: "",
     date: "",
     time: "",
@@ -44,6 +43,23 @@ export default function Contact() {
             Take the first step towards your perfect smile
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
+        </div>
+
+        {/* Map Section */}
+        <div className="mb-16">
+          <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-96 lg:h-[500px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1234567890!2d75.4833!3d11.7469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5c7a7a7a7a7a7%3A0x1234567890abcdef!2sThangal%20Palace%2C%20Thalassery!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+              title="Ghosh's Dental Studio - Thalassery Location"
+            />
+          </Card>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
@@ -115,24 +131,6 @@ export default function Contact() {
                 {/* Step 2 */}
                 {formStep === 2 && (
                   <div className="space-y-6 animate-in fade-in">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-3">
-                        Select Your Nearest Branch
-                      </label>
-                      <select
-                        className="w-full px-4 py-3 border-2 border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all hover:border-primary/50 cursor-pointer"
-                        value={formData.branch}
-                        onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
-                      >
-                        <option value="">Choose a branch</option>
-                        <option value="Kochi">Kochi Main</option>
-                        <option value="TVM">Thiruvananthapuram</option>
-                        <option value="Kozhikode">Kozhikode</option>
-                        <option value="Ernakulathappan">Ernakulathappan</option>
-                        <option value="Thrissur">Thrissur</option>
-                        <option value="Kottayam">Kottayam</option>
-                      </select>
-                    </div>
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-4">
                         What Service Do You Need?
@@ -262,8 +260,8 @@ export default function Contact() {
                     <MapPin className="text-primary" size={24} />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground">Main Branch</p>
-                    <p className="font-bold text-foreground text-sm">MG Road, Kochi</p>
+                    <p className="text-xs text-muted-foreground">Location</p>
+                    <p className="font-bold text-foreground text-sm">Thangal Palace, AVK Nair Road, Pilakool, Thalassery, Kerala 670101</p>
                   </div>
                 </div>
               </div>
@@ -273,28 +271,37 @@ export default function Contact() {
                 <p className="text-sm font-semibold text-foreground mb-3">Working Hours</p>
                 <div className="space-y-1 text-sm">
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
-                    <span className="text-muted-foreground">Mon - Sat:</span>{" "}
-                    <span className="font-semibold">9:00 AM - 8:00 PM</span>
+                    <span className="text-muted-foreground">Wednesday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Thursday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Friday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Saturday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
                     <span className="text-muted-foreground">Sunday:</span>{" "}
-                    <span className="font-semibold text-green-600">Closed</span>
+                    <span className="font-semibold">11:30 AM - 5:00 PM</span>
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
-                    <span className="text-muted-foreground">Status:</span>{" "}
-                    <span className="font-semibold text-green-600 animate-pulse">Open Now</span>
+                    <span className="text-muted-foreground">Monday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
+                  </p>
+                  <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
+                    <span className="text-muted-foreground">Tuesday:</span>{" "}
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
                   </p>
                 </div>
               </div>
             </Card>
 
-            {/* Special Offer */}
-            <Card className="p-6 bg-gradient-to-r from-primary to-accent text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 cursor-pointer animate-pulse">
-              <p className="text-sm font-semibold mb-2">LIMITED TIME OFFER</p>
-              <p className="text-2xl font-bold mb-2">30% OFF</p>
-              <p className="text-sm mb-4">On your first appointment and treatment planning</p>
-              <p className="text-xs opacity-90">Valid till end of month. T&C apply.</p>
-            </Card>
           </div>
         </div>
       </div>

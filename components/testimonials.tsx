@@ -41,6 +41,20 @@ const testimonials = [
     text: "Extremely professional team. The EMI options made treatment affordable. My smile transformation is incredible!",
     image: "/cheerful-woman-face-portrait-smiling.jpg",
   },
+  {
+    name: "Vinod Parery",
+    location: "Thalassery",
+    rating: 5,
+    text: "I am thoroughly impressed with the quality of care and service at Ghosh's New Dental Clinic. The entire team is exceptional, reflecting the high standards of Dr. Ghosh himself. As a highly experienced dentist with over three decades in practice, he is someone I would confidently recommend for any dental needs. This clinic has truly become our family's go-to for dental care. Best wishes",
+    image: "/confident-man-smiling-professional-portrait.jpg",
+  },
+  {
+    name: "Nani Mk",
+    location: "Thalassery",
+    rating: 5,
+    text: "Top notch service at Ghosh's dental studio! Their team provided high quality treatment with utmost care. Would definitely recommend!!",
+    image: "/happy-woman-face-portrait-smiling.jpg",
+  },
 ]
 
 export default function Testimonials() {

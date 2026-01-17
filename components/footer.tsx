@@ -57,14 +57,6 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Branches
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
@@ -113,67 +105,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Branches */}
-          <div>
-            <h4 className="font-bold mb-4">Branches</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Kochi Main
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Thiruvananthapuram
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  Kozhikode
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById("branches")?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
-                >
-                  More...
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="border-t border-white/10 pt-8 mb-8">
-          <div className="max-w-md">
-            <h4 className="font-bold mb-2">Newsletter</h4>
-            <p className="text-sm text-gray-300 mb-4">Subscribe to get special offers and updates</p>
-            <div className="flex gap-2 hover:gap-3 transition-all">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all hover:bg-white/15"
-              />
-              <Button className="bg-primary hover:bg-primary/90 text-white hover:shadow-lg hover:scale-105 transition-all">
-                Subscribe
-              </Button>
-            </div>
-          </div>
         </div>
 
         {/* Social Icons */}
         <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Dinaks family dental clinic. All rights reserved.</p>
+          <p className="text-sm text-gray-300">&copy; 2025 Dr Ghosh's dental Studio. All rights reserved.</p>
           <div className="flex gap-4">
             <a
               href="https://facebook.com"
