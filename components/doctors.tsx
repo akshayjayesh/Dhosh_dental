@@ -230,13 +230,7 @@ export default function Doctors() {
         {selectedDoctor !== null && selectedDoctorData && (
           <div className="mt-12 animate-in fade-in slide-in-from-bottom-4 duration-300">
             <Card className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/20">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <img
-                  src={selectedDoctorData.image || "/placeholder.svg"}
-                  alt={selectedDoctorData.name}
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
-                <div className="space-y-6">
+              <div className="space-y-6 max-w-2xl">
                   <div>
                     <h3 className="text-3xl font-bold text-foreground mb-2">{selectedDoctorData.name}</h3>
                     <p className="text-lg text-primary font-semibold mb-1">{selectedDoctorData.title}</p>
@@ -269,7 +263,6 @@ export default function Doctors() {
                       Email
                     </a>
                   </div>
-                </div>
               </div>
             </Card>
           </div>
