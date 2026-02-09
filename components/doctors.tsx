@@ -115,23 +115,8 @@ function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDocto
           selectedDoctor === idx ? "ring-2 ring-primary" : ""
         }`}
       >
-        {/* Image Container */}
-        <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-          <img
-            src={doctor.image || "/placeholder.svg"}
-            alt={doctor.name}
-            className={`w-full h-full object-cover transition-all duration-300 ${
-              hoveredCard === idx ? "scale-110" : "scale-100"
-            }`}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-          {selectedCategory === "main" && (
-            <Badge className="absolute top-3 right-3 bg-primary/90">{doctor.experience}</Badge>
-          )}
-        </div>
-
         {/* Content */}
-        <div className="p-4 space-y-3">
+        <div className="p-6 space-y-3 bg-gradient-to-br from-primary/5 to-accent/5">
           <div>
             <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
             <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
