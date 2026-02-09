@@ -7,7 +7,7 @@ import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react"
 export default function Hero() {
   const [displayText, setDisplayText] = useState("")
   const [currentSlide, setCurrentSlide] = useState(0)
-  const fullText = "Transform Your Smile with Advanced Aligner & Braces Technology"
+  const fullText = "Comprehensive Dental Care for Your Perfect Smile"
 
   const heroImages = [
     "/professional-dentist-with-patient-smiling-dental-c.jpg",
