@@ -68,26 +68,36 @@ export default function Contact() {
     setSubmitMessage("")
 
     try {
-      const response = await fetch("/api/send-whatsapp", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          phone: formData.phone,
-          service: formData.service,
-          date: formData.date,
-          time: formData.time,
-        }),
-      })
+      // Create WhatsApp message with form details
+      const whatsappNumber = "919447045560" // Clinic's WhatsApp number
+      const message = `Hello! I would like to book an appointment.
 
-      if (!response.ok) {
-        throw new Error("Failed to send WhatsApp message")
-      }
+Name: ${formData.name}
+Phone: ${formData.phone}
+Service: ${formData.service}
+Preferred Date: ${formData.date}
+Preferred Time: ${formData.time}
+
+Please confirm my appointment.`
+
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(message)
+
+      // Create WhatsApp link
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+
+      // Open WhatsApp in new tab
+      window.open(whatsappLink, "_blank")
 
       setSubmitStatus("success")
-      setSubmitMessage("Appointment booked! We'll contact you on WhatsApp soon.")
+      setSubmitMessage("Opening WhatsApp with your appointment details. Please send the message to confirm your booking.")
       setFormData({ name: "", phone: "", service: "", date: "", time: "" })
       setFormStep(1)
+
+      // Reset after 3 seconds
+      setTimeout(() => {
+        setSubmitStatus(null)
+      }, 3000)
     } catch (error) {
       setSubmitStatus("error")
       setSubmitMessage(error instanceof Error ? error.message : "Something went wrong. Please try again.")
