@@ -117,9 +117,14 @@ function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDocto
       >
         {/* Content */}
         <div className="p-6 space-y-3 bg-gradient-to-br from-primary/5 to-accent/5">
-          <div>
-            <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
-            <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
+          <div className="flex justify-between items-start gap-2">
+            <div className="flex-1">
+              <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
+              <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
+            </div>
+            {selectedCategory === "main" && (
+              <Badge className="bg-primary/90 whitespace-nowrap">{doctor.experience}</Badge>
+            )}
           </div>
 
           <div className="text-xs">
