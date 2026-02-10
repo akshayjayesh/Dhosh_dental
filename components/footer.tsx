@@ -1,6 +1,8 @@
 "use client"
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { BRAND_NAME, LOGO_SRC } from "@/lib/site"
 
 export default function Footer() {
   return (
