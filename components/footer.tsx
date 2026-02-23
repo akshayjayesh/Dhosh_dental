@@ -86,7 +86,7 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Clear Aligners
+                  Tooth Whitening
                 </button>
               </li>
               <li>
@@ -94,7 +94,7 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Metal Braces
+                  Smile Designing
                 </button>
               </li>
               <li>
@@ -102,15 +102,55 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Ceramic Braces
+                  Dental Implants
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Consultation
+                  Orthodontic Treatment & Invisalign
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Root Canal Treatment
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Periodontal Treatment
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Full Mouth Rehabilitation
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Pediatric Dentistry
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Oral Surgery
                 </button>
               </li>
             </ul>
