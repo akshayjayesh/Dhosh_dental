@@ -388,7 +388,7 @@ Please confirm my appointment.`
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
                     <span className="text-muted-foreground">Sunday:</span>{" "}
-                    <span className="font-semibold">11:30 AM - 5:00 PM</span>
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
                     <span className="text-muted-foreground">Monday:</span>{" "}
