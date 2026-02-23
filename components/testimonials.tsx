@@ -8,42 +8,42 @@ import { Card } from "@/components/ui/card"
 const testimonials = [
   {
     name: "Sanisha Roshith",
-    location: "1 review",
+    location: "",
     rating: 5,
     text: "One of the best dental clinic I have visited. The doctor is very kind, patient, and skilled. Treatment was painless and affordable. Staff behavior is also very good. Truly satisfied with the service❤️❤️",
     image: "/smiling-woman-portrait-professional.jpg",
   },
   {
     name: "Vinod Parery",
-    location: "Local Guide·6 reviews",
+    location: "",
     rating: 5,
     text: "I am thoroughly impressed with the quality of care and service at Ghosh's New Dental Clinic. The entire team is exceptional, reflecting the high standards of Dr. Ghosh himself. As a highly experienced dentist with over three decades in practice, he is someone I would confidently recommend for any dental needs.",
     image: "/confident-man-smiling-professional-portrait.jpg",
   },
   {
     name: "Anjana Ak",
-    location: "3 reviews",
+    location: "",
     rating: 5,
     text: "Very friendly and comfortable Dr if anybody have dental problem can visit the clinic without 2nd thought and opinion. Reception staff treat us very kindly",
     image: "/happy-woman-face-portrait-smiling.jpg",
   },
   {
     name: "Nandana E",
-    location: "2 reviews",
+    location: "",
     rating: 5,
     text: "Excellent experience from start to finish. The dentist and staff were incredibly professional and friendly. Treatment was painless, and they explained everything clearly. Highly recommend this clinic for anyone nervous about dental visits.",
     image: "/cheerful-woman-face-portrait-smiling.jpg",
   },
   {
     name: "AMAYA M P",
-    location: "1 review",
+    location: "",
     rating: 5,
     text: "I highly recommend this clinic. The doctor took the time to explain everything, making me feel very comfortable. ✨",
     image: "/happy-woman-face-portrait-smiling.jpg",
   },
   {
     name: "Apranarineesh Parambath",
-    location: "1 review",
+    location: "",
     rating: 5,
     text: "Best doctor and staff I had ever met for my dental treatment thank you.",
     image: "/confident-man-smiling-professional-portrait.jpg",
@@ -113,7 +113,9 @@ export default function Testimonials() {
                   />
                   <div>
                     <p className="font-bold text-foreground">{testimonials[current].name}</p>
-                    <p className="text-muted-foreground text-sm">{testimonials[current].location}</p>
+                    {testimonials[current].location && (
+                      <p className="text-muted-foreground text-sm">{testimonials[current].location}</p>
+                    )}
                   </div>
                 </div>
               </div>
