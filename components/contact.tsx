@@ -127,7 +127,7 @@ Please confirm my appointment.`
         <div className="mb-16">
           <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-96 lg:h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1234567890!2d75.4833!3d11.7469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5c7a7a7a7a7a7%3A0x1234567890abcdef!2sThangal%20Palace%2C%20Thalassery!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.7923847152046!2d75.4951709!3d11.7470596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4277cb1189f07%3A0xc73bdc760d7ca69e!2sGhosh's%20dental%20studio%20and%20Belviso%20facial%20cosmetic%20centre!5e0!3m2!1sen!2sin!4v1704900000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -135,7 +135,7 @@ Please confirm my appointment.`
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
-              title="Ghosh's Dental Studio - Thalassery Location"
+              title="Ghosh's Dental Studio Location"
             />
           </Card>
         </div>
