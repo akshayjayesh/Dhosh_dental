@@ -159,8 +159,12 @@ export default function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Ghosh's dental Studio. All rights reserved.</p>
+        <div className="border-t border-white/10 pt-8 flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2">
+            <p className="text-sm text-gray-300">&copy; 2025 Dr Ghosh's dental Studio. All rights reserved.</p>
+            <span className="text-gray-400 hidden sm:inline">•</span>
+            <p className="text-sm text-gray-300">Developed by <a href="https://kozker.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-semibold hover:underline">Kozker Tech</a></p>
+          </div>
           <div className="flex gap-4">
             <a
               href="https://facebook.com"
