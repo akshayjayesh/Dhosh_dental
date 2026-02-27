@@ -16,9 +16,9 @@ const cases = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F8a368a50c92e4b46a9e1028ab4024bff?format=webp&width=800&height=1200",
   },
   {
-    title: "Aesthetic Enhancement",
+    title: "Full mouth teeth implant",
     treatment: "Ceramic Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F9afbbcb292e84af5b8de9574b86cb951",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5fe0d9aff3a24aa389b8b517f92e100f?format=webp&width=800&height=1200",
   },
   {
     title: "Spacing Correction",
