@@ -23,7 +23,7 @@ const cases = [
   {
     title: "Spacing Correction",
     treatment: "Clear Aligners",
-    image: "/teeth-gap-closure-dental-alignment-before-after.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F94cca6db16314b07b3edee4d5028ae25?format=webp&width=800&height=1200",
   },
   {
     title: "Complex Case",
