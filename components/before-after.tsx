@@ -126,7 +126,6 @@ export default function BeforeAfter() {
                   >
                     {caseItem.title}
                   </h3>
-                  <p className="text-sm text-primary font-semibold">{caseItem.treatment}</p>
                 </div>
               </Card>
             </div>
