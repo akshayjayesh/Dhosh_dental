@@ -67,7 +67,7 @@ export default function BeforeAfter() {
 
 
         {/* Gallery Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {cases.map((caseItem, idx) => (
             <div
               key={idx}
@@ -81,11 +81,11 @@ export default function BeforeAfter() {
                   hoveredCard === idx ? "ring-2 ring-primary" : ""
                 }`}
               >
-                <div className="relative h-96 sm:h-[450px] lg:h-[550px] overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                <div className="relative h-[600px] sm:h-[500px] lg:h-[550px] overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                   <img
                     src={caseItem.image || "/placeholder.svg"}
                     alt={caseItem.title}
-                    className={`w-full h-full object-contain transition-all duration-500 ${
+                    className={`w-full h-full object-cover transition-all duration-500 ${
                       hoveredCard === idx ? "scale-110 brightness-110" : "scale-100 brightness-90"
                     }`}
                   />
