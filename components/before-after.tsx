@@ -8,7 +8,7 @@ const cases = [
   {
     title: "Severe Crowding Case",
     treatment: "Clear Aligners",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fb43496c7bbe84bcc80c8751f4c2f1bd5",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F71fd0f655fa04430be4b0c66cd7ff4e3?format=webp&width=800&height=1200",
   },
   {
     title: "Overbite Correction",
@@ -98,7 +98,7 @@ export default function BeforeAfter() {
                   hoveredCard === idx ? "ring-2 ring-primary" : ""
                 }`}
               >
-                <div className="relative h-80 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                <div className="relative h-96 sm:h-[450px] lg:h-[550px] overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                   <img
                     src={caseItem.image || "/placeholder.svg"}
                     alt={caseItem.title}
