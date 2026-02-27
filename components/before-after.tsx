@@ -31,9 +31,9 @@ const cases = [
     image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F75c5447cca744204b334766cc48f4761",
   },
   {
-    title: "Quick Alignment",
+    title: "Clear aligners",
     treatment: "Clear Aligners",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F4c6c018aae394d4882acf0c28a8bc41d",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F0104b815552f4cfa90958d2bdcda6c66?format=webp&width=800&height=1200",
   },
 ]
 
