@@ -11,9 +11,9 @@ const cases = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F71fd0f655fa04430be4b0c66cd7ff4e3?format=webp&width=800&height=1200",
   },
   {
-    title: "Overbite Correction",
+    title: "Veneers",
     treatment: "Metal Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fd9a3b2687db3430982ab09299e49e8cc",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5f616ec3382d4714a24166c4e893ec2e?format=webp&width=800&height=1200",
   },
   {
     title: "Aesthetic Enhancement",
