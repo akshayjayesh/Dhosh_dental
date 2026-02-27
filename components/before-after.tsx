@@ -13,7 +13,7 @@ const cases = [
   {
     title: "Veneers",
     treatment: "Metal Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5f616ec3382d4714a24166c4e893ec2e?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F8a368a50c92e4b46a9e1028ab4024bff?format=webp&width=800&height=1200",
   },
   {
     title: "Aesthetic Enhancement",
