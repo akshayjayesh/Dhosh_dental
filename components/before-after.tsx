@@ -26,9 +26,9 @@ const cases = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F94cca6db16314b07b3edee4d5028ae25?format=webp&width=800&height=1200",
   },
   {
-    title: "Complex Case",
+    title: "Fixed Crowns",
     treatment: "Metal Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F75c5447cca744204b334766cc48f4761",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fe79440ba899d4d87be2ca1691ab4b25e?format=webp&width=800&height=1200",
   },
   {
     title: "Clear aligners",
