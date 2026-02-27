@@ -65,27 +65,10 @@ export default function BeforeAfter() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {filters.map((filter) => (
-            <Button
-              key={filter}
-              onClick={() => setSelectedFilter(filter)}
-              variant={selectedFilter === filter ? "default" : "outline"}
-              className={`transition-all hover:scale-105 ${
-                selectedFilter === filter
-                  ? "bg-primary hover:bg-primary/90 text-white shadow-lg"
-                  : "border-primary text-primary hover:bg-primary/5 hover:border-primary/70"
-              }`}
-            >
-              {filter}
-            </Button>
-          ))}
-        </div>
 
         {/* Gallery Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          {filtered.map((caseItem, idx) => (
+          {cases.map((caseItem, idx) => (
             <div
               key={idx}
               onMouseEnter={() => setHoveredCard(idx)}
