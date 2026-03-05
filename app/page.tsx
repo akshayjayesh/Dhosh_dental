@@ -6,6 +6,7 @@ import Hero from "@/components/hero"
 import Services from "@/components/services"
 import Doctors from "@/components/doctors"
 import Technology from "@/components/technology"
+import ClinicGallery from "@/components/clinic-gallery"
 import PatientCare from "@/components/patient-care"
 import Testimonials from "@/components/testimonials"
 import Timeline from "@/components/timeline"
@@ -32,6 +33,7 @@ export default function Home() {
       <Services />
       <Doctors />
       <Technology />
+      <ClinicGallery />
       <PatientCare />
       <Testimonials />
       <Timeline />
