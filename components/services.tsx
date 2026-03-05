@@ -7,102 +7,295 @@ import { Card } from "@/components/ui/card"
 const services = [
   {
     title: "Digital Dentistry",
-    description: "Advanced digital scanning, 3D imaging, and CAD-CAM technology for precise treatments",
-    price: "₹5,000 - ₹50,000",
+    description: "Free Scanning & Treatment Planning",
+    price: "Free",
     image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Feeca2d2d8a1e417c9ceedf9d169d7e59?format=webp",
+    fullDetails: {
+      description: "Digital impressions of teeth using intraoral scanners, no messy moulds needed.",
+      treatments: [
+        "Free Scanning — Digital impressions using advanced intraoral scanners",
+        "Free Treatment Planning — Customised digital treatment plan based on scan results"
+      ],
+      benefits: "Modern, non-invasive approach to dental assessment and planning with precise digital technology"
+    }
   },
   {
     title: "Smile Design",
-    description: "Personalized smile makeovers using latest cosmetic dentistry techniques",
-    price: "₹50,000 - ₹3,00,000",
+    description: "Personalized smile makeovers",
+    price: "₹2,500 onwards",
     image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F3e2396c3f46a45d7a928ada4cce0e004?format=webp",
+    fullDetails: {
+      description: "A cosmetic procedure that digitally redesigns the appearance of your smile by analysing facial features, tooth shape, size, and alignment to create a personalised aesthetic outcome.",
+      treatments: [
+        "Digital smile design analysis",
+        "Facial feature assessment",
+        "Customized aesthetic planning"
+      ],
+      benefits: "Creates a personalized aesthetic outcome that complements your facial features"
+    }
   },
   {
-    title: "Veneers & Teeth Whitening",
-    description: "Aesthetic solutions for tooth color correction and porcelain veneers for perfect smiles",
-    price: "₹20,000 - ₹2,00,000",
+    title: "Veneer & Teeth Whitening",
+    description: "Aesthetic solutions for tooth enhancement",
+    price: "₹5,000 onwards",
     image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fedf5475b84ab40d081a02f4980a547f5?format=webp",
+    fullDetails: {
+      description: "Transform your smile with our comprehensive cosmetic solutions.",
+      treatments: [
+        "Veneers — Thin shells of porcelain or composite bonded to tooth front surfaces to correct colour, shape, or minor misalignment",
+        "Teeth Whitening — Professional bleaching procedure to remove stains and lighten tooth colour"
+      ],
+      benefits: "Dramatic aesthetic improvements in tooth appearance and brightness"
+    }
   },
   {
     title: "Dental Implants",
-    description: "Permanent tooth replacement using latest implant technology - Immediate, Delayed & Basal options",
-    price: "₹80,000 - ₹5,00,000",
+    description: "Permanent tooth replacement solution",
+    price: "₹25,000 onwards",
     image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F8e44efcebbc045f09b824bfe62709a5e",
+    fullDetails: {
+      description: "A titanium post surgically placed into the jawbone to act as an artificial tooth root, topped with a crown for a natural-looking permanent replacement of missing teeth.",
+      treatments: [
+        "Titanium post placement into jawbone",
+        "Osseointegration process",
+        "Crown placement for natural appearance"
+      ],
+      benefits: "Natural-looking, durable permanent solution that restores full function and appearance"
+    }
   },
   {
     title: "Root Canal, Post, Inlays, Onlays",
-    description: "Advanced restorative treatments for endodontic solutions and tooth preservation",
-    price: "₹15,000 - ₹2,50,000",
+    description: "Advanced restorative endodontic treatments",
+    price: "₹2,500 onwards",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F817636f22fa2430a951983af81dcd29a",
+    fullDetails: {
+      description: "Comprehensive tooth-saving and restoration treatments.",
+      treatments: [
+        "Root Canal Treatment (RCT) — Removal of infected pulp, cleaning and sealing to save the natural tooth",
+        "Post — A pin placed inside root canal to support a crown after RCT",
+        "Inlays — Custom-made fillings fitted within the cusps of a damaged tooth",
+        "Onlays — Similar to inlays but extend over one or more cusps for larger restorations"
+      ],
+      benefits: "Preserves natural teeth while restoring strength and functionality"
+    }
   },
   {
-    title: "Invisalign Aligners",
-    description: "Nearly invisible aligners for comfortable and effective teeth straightening",
-    price: "₹2,50,000 - ₹4,50,000",
+    title: "Aligners",
+    description: "Clear, removable orthodontic trays",
+    price: "₹4,000 onwards",
     image: "/clear-dental-aligners-transparent-braces.jpg",
+    fullDetails: {
+      description: "Clear, removable plastic trays custom-made to gradually straighten teeth without metal braces.",
+      treatments: [
+        "Custom-made clear aligner trays",
+        "Progressive alignment series",
+        "Periodic tray changes for gradual teeth movement"
+      ],
+      benefits: "Nearly invisible, removable option for comfortable and effective teeth straightening"
+    }
   },
   {
-    title: "Micro Implant Orthodontic Treatment",
-    description: "Advanced orthodontic solution using micro-implants for superior results",
-    price: "₹1,50,000 - ₹3,50,000",
+    title: "Micro Implants – Orthodontic Treatment",
+    description: "Advanced orthodontic anchoring system",
+    price: "₹25,000 onwards",
     image: "https://images.pexels.com/photos/12510076/pexels-photo-12510076.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F99b6e8ff88bf4a9da5e5aefee4a6d0b3?format=webp",
+    fullDetails: {
+      description: "Tiny titanium screws (Temporary Anchorage Devices) placed in the jawbone to serve as fixed anchor points during orthodontic treatment.",
+      treatments: [
+        "TAD (Temporary Anchorage Device) placement",
+        "Precise tooth movement",
+        "Enhanced orthodontic control"
+      ],
+      benefits: "Enables more controlled and precise tooth movement, reducing treatment time"
+    }
   },
   {
     title: "Paediatric Dentistry",
-    description: "Specialized dental care for children with gentle, child-friendly approach",
-    price: "₹2,000 - ₹30,000",
+    description: "Specialized dental care for children",
+    price: "₹1,000 onwards",
     image: "https://images.pexels.com/photos/8260438/pexels-photo-8260438.jpeg",
+    fullDetails: {
+      description: "Complete dental care for infants, children, and teenagers with gentle, child-friendly approach.",
+      treatments: [
+        "Check-ups and examinations",
+        "Fillings for milk and permanent teeth",
+        "Fluoride treatments",
+        "Space maintainers",
+        "Preventive care for developing dentition"
+      ],
+      benefits: "Establishes good oral habits early and ensures healthy development of permanent teeth"
+    }
   },
   {
     title: "Conservative Dentistry",
-    description: "Teeth preservation techniques including fillings and minimal invasive treatments",
-    price: "₹1,000 - ₹50,000",
+    description: "Minimally invasive tooth preservation",
+    price: "₹1,000 onwards",
     image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
-  },
-  {
-    title: "Periodontology (Gum Disease)",
-    description: "Comprehensive gum disease treatment and periodontal care for healthy gums",
-    price: "₹5,000 - ₹1,00,000",
-    image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
+    fullDetails: {
+      description: "Focuses on preserving natural tooth structure through fillings, preventive treatments, and minimally invasive procedures.",
+      treatments: [
+        "Conservative fillings",
+        "Preventive treatments",
+        "Minimally invasive procedures",
+        "Decay and damage treatment without extraction"
+      ],
+      benefits: "Maintains maximum tooth structure while treating decay and damage"
+    }
   },
   {
     title: "Metal Braces",
-    description: "Traditional, durable and highly effective orthodontic solution",
-    price: "₹30,000 - ₹1,50,000",
+    description: "Traditional orthodontic correction",
+    price: "₹20,000 onwards",
     image: "/metal-braces-dental-orthodontic-treatment.jpg",
+    fullDetails: {
+      description: "Traditional stainless steel brackets and wires bonded to teeth to correct misalignment, crowding, spacing, and bite issues.",
+      treatments: [
+        "Stainless steel bracket placement",
+        "Wire installation and adjustments",
+        "Bite correction",
+        "Alignment of crowded teeth",
+        "Spacing correction"
+      ],
+      benefits: "Highly effective solution with proven results for comprehensive orthodontic correction"
+    }
   },
   {
     title: "Ceramic Braces",
-    description: "Tooth-colored braces that blend naturally with your smile",
-    price: "₹60,000 - ₹2,50,000",
+    description: "Tooth-colored orthodontic option",
+    price: "₹35,000 onwards",
     image: "/ceramic-braces-tooth-colored-orthodontic.jpg",
+    fullDetails: {
+      description: "Similar to metal braces but made with tooth-coloured or clear ceramic brackets, making them less visible while providing the same corrective function.",
+      treatments: [
+        "Ceramic bracket placement",
+        "Tooth-colored wire options",
+        "Aesthetic orthodontic treatment",
+        "Same corrective functionality as metal braces"
+      ],
+      benefits: "Less visible aesthetic option with the same effectiveness as traditional braces"
+    }
   },
   {
-    title: "Crowns & Bridges",
-    description: "Durable tooth restoration solutions to replace missing teeth and strengthen damaged ones",
-    price: "₹25,000 - ₹2,00,000",
+    title: "Crown & Bridges",
+    description: "Durable tooth restoration solutions",
+    price: "₹5,000 onwards",
     image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5a01420171dc417e9c42c1c0adc26595",
+    fullDetails: {
+      description: "Fixed prosthetic solutions for damaged and missing teeth restoration.",
+      treatments: [
+        "Crown — A cap placed over damaged, decayed, or root canal-treated tooth to restore shape, strength, and appearance",
+        "Bridge — A fixed prosthetic that replaces one or more missing teeth by anchoring to adjacent teeth"
+      ],
+      benefits: "Restores tooth function, appearance, and prevents adjacent teeth from shifting"
+    }
   },
   {
     title: "Porcelain Fused Ceramic",
-    description: "Esthetic and strong crown solutions combining natural appearance with excellent durability",
-    price: "₹18,000 - ₹1,50,000",
+    description: "Strong and aesthetic crown solution",
+    price: "₹5,000 onwards",
     image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Ff580c8716b1449448f0fd34bdf35a183",
+    fullDetails: {
+      description: "A type of crown or bridge combining a metal base with a porcelain outer layer, offering strength along with a natural tooth-like appearance.",
+      treatments: [
+        "Metal base for structural strength",
+        "Porcelain outer layer for aesthetics",
+        "Natural tooth-like appearance",
+        "Durable restoration"
+      ],
+      benefits: "Combines excellent durability with natural appearance for long-lasting restorations"
+    }
   },
   {
-    title: "Zirconia, E-max, DMLS",
-    description: "Premium advanced ceramic materials for superior aesthetics and long-lasting restorations",
-    price: "₹35,000 - ₹2,50,000",
+    title: "Zirconia, E-Max, DMLS",
+    description: "Premium advanced ceramic materials",
+    price: "₹6,000 onwards",
     image: "https://images.pexels.com/photos/6627695/pexels-photo-6627695.jpeg",
     overlayImage: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fe436909c73654f4793e9649d913f2fae",
+    fullDetails: {
+      description: "Top-tier ceramic materials for superior aesthetics and longevity.",
+      treatments: [
+        "Zirconia — High-strength, metal-free ceramic crowns known for durability and natural look",
+        "E-Max — All-ceramic lithium disilicate crowns offering superior aesthetics and translucency",
+        "DMLS — Direct Metal Laser Sintering for precision-milled or laser-sintered restorations"
+      ],
+      benefits: "Maximum aesthetic appeal with exceptional durability and biocompatibility"
+    }
+  },
+  {
+    title: "Periodontal Treatments",
+    description: "Gum disease treatment and prevention",
+    price: "₹15,000 onwards",
+    image: "https://images.pexels.com/photos/6812543/pexels-photo-6812543.jpeg",
+    fullDetails: {
+      description: "Comprehensive treatment for gum disease and supporting structures of the teeth.",
+      treatments: [
+        "Scaling — Removal of plaque and tartar from tooth surfaces",
+        "Polishing — Smoothing tooth surfaces to prevent future plaque buildup",
+        "Flap Surgery — Surgical lifting of gums to clean deep tartar deposits and repair bone damage",
+        "Bone Grafting — Regenerating lost jawbone using graft material to support teeth or implants",
+        "Gingivectomy — Surgical removal of excess or diseased gum tissue",
+        "Crown Lengthening — Exposing more tooth surface by reshaping gum and bone tissue"
+      ],
+      benefits: "Restores gum health, prevents tooth loss, and improves overall oral health"
+    }
+  },
+  {
+    title: "Oral Surgery Procedures",
+    description: "Specialized surgical dental treatments",
+    price: "₹4,000 onwards",
+    image: "https://images.pexels.com/photos/8260438/pexels-photo-8260438.jpeg",
+    fullDetails: {
+      description: "Comprehensive surgical solutions for complex dental conditions.",
+      treatments: [
+        "Wisdom Teeth Removal — Extraction of third molars causing pain, crowding, or infection",
+        "Impacted Teeth Removal — Surgical extraction of teeth trapped beneath gumline or bone",
+        "Jaw Bone Fracture Correction — Surgical repair and stabilisation of fractured jaw bones",
+        "Jaw Bone Cyst Removal — Excision of cysts or lesions in the jaw to prevent bone damage",
+        "Orthodontic Surgery — Surgical correction of jaw discrepancies to aid orthodontic treatment",
+        "Alveoloplasty — Reshaping and smoothing of jawbone ridge, typically before denture fitting",
+        "Frenectomy — Removal of frenum that causes restriction or spacing issues"
+      ],
+      benefits: "Resolves complex oral surgical issues and improves dental and facial function"
+    }
+  },
+  {
+    title: "Full Mouth Rehabilitation",
+    description: "Complete smile restoration for edentulous patients",
+    price: "₹30,000 onwards",
+    image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+    fullDetails: {
+      description: "Complete restoration of function and aesthetics for fully edentulous (toothless) patients through multiple restoration options.",
+      treatments: [
+        "Implants — Permanent fixed teeth anchored to the jawbone",
+        "Removable Complete Dentures — Full sets of removable artificial teeth for upper and/or lower jaw",
+        "Over Denture — A denture supported and retained by underlying implants for improved stability"
+      ],
+      benefits: "Restores full function, appearance, and confidence for patients missing all teeth"
+    }
+  },
+  {
+    title: "Replacement of Few Missing Teeth",
+    description: "Solutions for partial tooth loss",
+    price: "₹4,000 onwards",
+    image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+    fullDetails: {
+      description: "Flexible solutions for patients with one or a few missing teeth.",
+      treatments: [
+        "Implants — Individual permanent tooth replacements",
+        "Bridges — Fixed restorations spanning the gap of missing teeth",
+        "Removable Partial Dentures — Removable appliances with metal clasps for retention",
+        "Acrylic Removable Dentures — Lightweight removable partial dentures made from acrylic resin"
+      ],
+      benefits: "Restores natural appearance, function, and prevents shifting of remaining teeth"
+    }
   },
 ]
 
@@ -170,7 +363,8 @@ export default function Services() {
                   <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-2">{service.description}</p>
+                  <p className="text-muted-foreground mb-2 line-clamp-2">{service.description}</p>
+                  <p className="text-lg font-semibold text-primary mb-4">{service.price}</p>
                   <Button
                     onClick={(e) => {
                       e.stopPropagation()
@@ -268,7 +462,35 @@ export default function Services() {
               <div className="p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-3">{services[selectedService].title}</h2>
                 <p className="text-lg text-primary font-semibold mb-4">{services[selectedService].price}</p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">{services[selectedService].description}</p>
+
+                {services[selectedService].fullDetails && (
+                  <>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                      {services[selectedService].fullDetails.description}
+                    </p>
+
+                    {services[selectedService].fullDetails.treatments && (
+                      <div className="mb-6">
+                        <h4 className="font-bold text-foreground mb-3">What's Included:</h4>
+                        <ul className="space-y-2">
+                          {services[selectedService].fullDetails.treatments.map((treatment, idx) => (
+                            <li key={idx} className="flex gap-3 text-muted-foreground">
+                              <span className="text-primary font-bold">•</span>
+                              <span>{treatment}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {services[selectedService].fullDetails.benefits && (
+                      <div className="mb-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                        <p className="text-foreground font-semibold mb-2">Benefits:</p>
+                        <p className="text-muted-foreground">{services[selectedService].fullDetails.benefits}</p>
+                      </div>
+                    )}
+                  </>
+                )}
 
                 {/* Action Button */}
                 <Button

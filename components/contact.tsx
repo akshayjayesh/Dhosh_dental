@@ -19,7 +19,26 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null)
   const [submitMessage, setSubmitMessage] = useState("")
 
-  const dentalServices = ["Clear Aligners", "Metal Braces", "Ceramic Braces", "Consultation", "Other"]
+  const dentalServices = [
+    "Digital Dentistry",
+    "Smile Design",
+    "Veneer & Teeth Whitening",
+    "Dental Implants",
+    "Root Canal, Post, Inlays, Onlays",
+    "Aligners",
+    "Micro Implants – Orthodontic Treatment",
+    "Paediatric Dentistry",
+    "Conservative Dentistry",
+    "Metal Braces",
+    "Ceramic Braces",
+    "Crown & Bridges",
+    "Porcelain Fused Ceramic",
+    "Zirconia, E-Max, DMLS",
+    "Periodontal Treatments",
+    "Oral Surgery Procedures",
+    "Full Mouth Rehabilitation",
+    "Replacement of Few Missing Teeth",
+  ]
   const services = dentalServices
   const timeSlots = ["9:00 AM", "10:00 AM", "11:00 AM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"]
 
