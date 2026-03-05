@@ -88,7 +88,7 @@ export default function Contact() {
 
     try {
       // Create WhatsApp message with form details
-      const whatsappNumber = "919447045560" // Clinic's WhatsApp number
+      const whatsappNumber = "919778084629" // Clinic's WhatsApp number
       const message = `Hello! I would like to book an appointment.
 
 Name: ${formData.name}
@@ -349,7 +349,7 @@ Please confirm my appointment.`
 
               <div className="space-y-4">
                 <a
-                  href="tel:+919447045560"
+                  href="tel:+919778084629"
                   className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-lg transition-all cursor-pointer group hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-lg flex items-center justify-center transition-all">
@@ -357,12 +357,12 @@ Please confirm my appointment.`
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Call Us</p>
-                    <p className="font-bold text-primary">+91 94470 45560</p>
+                    <p className="font-bold text-primary">9778084629 / 04 9025 43671</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:hello@drniyaz.com"
+                  href="mailto:ghoshsdentalstudio@gmail.com"
                   className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-lg transition-all cursor-pointer group hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-lg flex items-center justify-center transition-all">
@@ -370,7 +370,7 @@ Please confirm my appointment.`
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Email</p>
-                    <p className="font-bold text-primary">hello@dr.com</p>
+                    <p className="font-bold text-primary">ghoshsdentalstudio@gmail.com</p>
                   </div>
                 </a>
 
