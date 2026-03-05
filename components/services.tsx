@@ -251,7 +251,7 @@ const services = [
     title: "Oral Surgery Procedures",
     description: "Specialized surgical dental treatments",
     price: "₹4,000 onwards",
-    image: "https://images.pexels.com/photos/8260438/pexels-photo-8260438.jpeg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5519bb6402764eb0a597628e0835cd6a?format=webp&width=800&height=1200",
     fullDetails: {
       description: "Comprehensive surgical solutions for complex dental conditions.",
       treatments: [
@@ -270,7 +270,7 @@ const services = [
     title: "Full Mouth Rehabilitation",
     description: "Complete smile restoration for edentulous patients",
     price: "₹30,000 onwards",
-    image: "https://images.pexels.com/photos/8176917/pexels-photo-8176917.jpeg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fec55b0ea0e1842afa590e1a63f903ab7?format=webp&width=800&height=1200",
     fullDetails: {
       description: "Complete restoration of function and aesthetics for fully edentulous (toothless) patients through multiple restoration options.",
       treatments: [
@@ -285,7 +285,7 @@ const services = [
     title: "Replacement of Few Missing Teeth",
     description: "Solutions for partial tooth loss",
     price: "₹4,000 onwards",
-    image: "https://images.pexels.com/photos/6812501/pexels-photo-6812501.jpeg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F300a7ad4bfe3461fa9261789ab59a131?format=webp&width=800&height=1200",
     fullDetails: {
       description: "Flexible solutions for patients with one or a few missing teeth.",
       treatments: [
