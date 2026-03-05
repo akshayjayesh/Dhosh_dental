@@ -48,8 +48,8 @@ export default function Hero() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" />
 
-      <div className="relative z-10 container mx-auto px-4 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center min-h-[600px]">
+      <div className="relative z-10 container mx-auto px-4 max-w-6xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center min-h-[600px]">
           {/* Left Content */}
           <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000">
             <div>
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
 
           {/* Right Image Slideshow */}
-          <div className="relative h-[500px] group">
+          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] group w-full">
             <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-2xl">
               {heroImages.map((img, idx) => (
                 <img

@@ -310,7 +310,7 @@ export default function Services() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Comprehensive Services</h2>
@@ -321,7 +321,7 @@ export default function Services() {
         </div>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-16">
           {services.map((service, idx) => (
             <div
               key={idx}

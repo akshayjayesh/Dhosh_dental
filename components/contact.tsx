@@ -132,7 +132,7 @@ Please confirm my appointment.`
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Book Your Appointment</h2>
@@ -159,7 +159,7 @@ Please confirm my appointment.`
           </Card>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
             <Card className="p-8 shadow-lg hover:shadow-xl transition-all h-full bg-gradient-to-br from-white to-primary/5 border border-primary/10">
