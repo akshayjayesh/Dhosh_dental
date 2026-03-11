@@ -10,7 +10,7 @@ const mainDoctors = [
     name: "Dr. ASHISH KUMAR GHOSH",
     title: "Principal Dentist",
     qualifications: "BDS",
-    specialization: "General Dentistry & Orthodontics",
+    specialization: "General Dentistry & Orthodontist",
     phone: "+91 94470 45560",
     email: "ashish@ghoshdental.com",
     category: "Main Doctor",
@@ -32,7 +32,7 @@ const mainDoctors = [
     name: "Dr. NANDITHA GHOSH",
     title: "Principal Dentist",
     qualifications: "BDS, MDS",
-    specialization: "Endodontics",
+    specialization: "Endodontist",
     phone: "+91 94470 45560",
     email: "nanditha@ghoshdental.com",
     category: "Main Doctor",
@@ -115,26 +115,16 @@ function DoctorCard({ doctor, idx, selectedDoctor, hoveredCard, setSelectedDocto
           selectedDoctor === idx ? "ring-2 ring-primary" : ""
         }`}
       >
-        {/* Image Container */}
-        <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-          <img
-            src={doctor.image || "/placeholder.svg"}
-            alt={doctor.name}
-            className={`w-full h-full object-cover transition-all duration-300 ${
-              hoveredCard === idx ? "scale-110" : "scale-100"
-            }`}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-          {selectedCategory === "main" && (
-            <Badge className="absolute top-3 right-3 bg-primary/90">{doctor.experience}</Badge>
-          )}
-        </div>
-
         {/* Content */}
-        <div className="p-4 space-y-3">
-          <div>
-            <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
-            <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
+        <div className="p-6 space-y-3 bg-gradient-to-br from-primary/5 to-accent/5">
+          <div className="flex justify-between items-start gap-2">
+            <div className="flex-1">
+              <h3 className="font-bold text-foreground text-sm line-clamp-2">{doctor.name}</h3>
+              <p className="text-xs text-primary font-semibold mt-1">{doctor.title}</p>
+            </div>
+            {selectedCategory === "main" && (
+              <Badge className="bg-primary/90 whitespace-nowrap">{doctor.experience}</Badge>
+            )}
           </div>
 
           <div className="text-xs">
@@ -240,13 +230,7 @@ export default function Doctors() {
         {selectedDoctor !== null && selectedDoctorData && (
           <div className="mt-12 animate-in fade-in slide-in-from-bottom-4 duration-300">
             <Card className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/20">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <img
-                  src={selectedDoctorData.image || "/placeholder.svg"}
-                  alt={selectedDoctorData.name}
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
-                />
-                <div className="space-y-6">
+              <div className="space-y-6 max-w-2xl">
                   <div>
                     <h3 className="text-3xl font-bold text-foreground mb-2">{selectedDoctorData.name}</h3>
                     <p className="text-lg text-primary font-semibold mb-1">{selectedDoctorData.title}</p>
@@ -279,7 +263,6 @@ export default function Doctors() {
                       Email
                     </a>
                   </div>
-                </div>
               </div>
             </Card>
           </div>

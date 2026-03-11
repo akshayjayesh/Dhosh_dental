@@ -7,7 +7,7 @@ import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react"
 export default function Hero() {
   const [displayText, setDisplayText] = useState("")
   const [currentSlide, setCurrentSlide] = useState(0)
-  const fullText = "Transform Your Smile with Advanced Aligner & Braces Technology"
+  const fullText = "Comprehensive Dental Care for Your Perfect Smile"
 
   const heroImages = [
     "/professional-dentist-with-patient-smiling-dental-c.jpg",
@@ -58,7 +58,10 @@ export default function Hero() {
                 <span className="text-primary animate-pulse">|</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-                Kerala's Premier Smile Design center
+                Digital Dentistry • Implants • Smile Design • Orthodontics & More
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                From veneers and whitening to root canals, crowns, Invisalign aligners, and advanced periodontal care—we provide expert solutions for all your dental needs, including pediatric dentistry.
               </p>
               <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-8 animate-pulse">
                 <span className="text-2xl">★★★★★</span>

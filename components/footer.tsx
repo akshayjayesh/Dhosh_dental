@@ -1,6 +1,8 @@
 "use client"
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { BRAND_NAME, LOGO_SRC } from "@/lib/site"
 
 export default function Footer() {
   return (
@@ -13,15 +15,24 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="group hover:translate-y-2 transition-transform cursor-pointer">
-            <div className="flex items-center gap-2 mb-4 hover:gap-3 transition-all">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                <span className="text-white font-bold">AP</span>
+            <button
+              onClick={() => document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })}
+              className="flex items-center gap-2 mb-4 hover:gap-3 transition-all hover:opacity-80"
+            >
+              <div className="relative w-10 h-10">
+                <Image
+                  src={LOGO_SRC}
+                  alt={BRAND_NAME}
+                  width={40}
+                  height={40}
+                  className="object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300 shadow-none rounded-4xl"
+                />
               </div>
               <div>
-                <h3 className="font-bold group-hover:text-primary transition-colors text-left">DR.GHOSH</h3>
-                <p className="text-xs text-gray-300">DENTAL STUDIO</p>
+                <h3 className="font-bold group-hover:text-primary transition-colors text-left">{BRAND_NAME}</h3>
+                <p className="text-xs text-gray-300">Premium Dental Care</p>
               </div>
-            </div>
+            </button>
             <p className="text-sm text-gray-300 leading-relaxed hover:text-gray-100 transition-colors">
               Transforming smiles with cutting-edge orthodontic technology and personalized care.
             </p>
@@ -120,7 +131,7 @@ export default function Footer() {
               <Facebook size={20} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/ghoshdentalstudio?igsh=MWJsdndhOGVib2dpNQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg"
