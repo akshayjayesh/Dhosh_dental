@@ -85,16 +85,7 @@ export const metadata: Metadata = {
       {
         url: "/favicon.png",
         type: "image/png",
-        sizes: "32x32",
-      },
-      {
-        url: "/favicon.png",
-        type: "image/png",
-        sizes: "192x192",
-      },
-      {
-        url: "/logo-ghosh.svg",
-        type: "image/svg+xml",
+        sizes: "any",
       },
     ],
     apple: "/favicon.png",
@@ -122,6 +113,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth text-center">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+      </head>
       <body className={`font-sans antialiased`}>
         <script
           type="application/ld+json"
