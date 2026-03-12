@@ -31,9 +31,9 @@ const cases = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fe79440ba899d4d87be2ca1691ab4b25e?format=webp&width=800&height=1200",
   },
   {
-    title: "Clear aligners",
+    title: "Fixed Teeth",
     treatment: "Clear Aligners",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F0104b815552f4cfa90958d2bdcda6c66?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1256c551aea145f5add95fd9566b369a%2F5c60f48b013c4e8ab8f84369099efc63?format=webp&width=800&height=1200",
   },
 ]
 
