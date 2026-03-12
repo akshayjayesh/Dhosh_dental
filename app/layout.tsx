@@ -83,16 +83,22 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo-ghosh.svg",
-        type: "image/svg+xml",
+        url: "/favicon.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+      {
+        url: "/favicon.png",
+        type: "image/png",
+        sizes: "192x192",
       },
       {
         url: "/logo-ghosh.svg",
         type: "image/svg+xml",
-        sizes: "any",
       },
     ],
-    apple: "/logo-ghosh.svg",
+    apple: "/favicon.png",
+    shortcut: "/favicon.png",
   },
   robots: {
     index: true,
