@@ -1,0 +1,20 @@
+{
+  "name": "Ghosh's Dental Studio",
+  "short_name": "Ghosh's Dental",
+  "description": "Premier dental clinic offering cosmetic dentistry, orthodontics with clear aligners and braces. Advanced technology, expert dentists in Kerala.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#c2001a",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["medical", "health"]
+}

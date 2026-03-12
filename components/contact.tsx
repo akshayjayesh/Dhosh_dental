@@ -357,7 +357,7 @@ Please confirm my appointment.`
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Call Us</p>
-                    <p className="font-bold text-primary text-sm sm:text-base break-words">9778084629 / 04 9025 43671</p>
+                    <p className="font-bold text-primary text-sm sm:text-base break-words">9778084629 / 9447046560</p>
                   </div>
                 </a>
 
