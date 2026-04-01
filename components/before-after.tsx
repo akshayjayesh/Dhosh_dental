@@ -8,32 +8,32 @@ const cases = [
   {
     title: "Severe Crowding Case",
     treatment: "Clear Aligners",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fb43496c7bbe84bcc80c8751f4c2f1bd5",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F71fd0f655fa04430be4b0c66cd7ff4e3?format=webp&width=800&height=1200",
   },
   {
-    title: "Overbite Correction",
+    title: "Veneers",
     treatment: "Metal Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2Fd9a3b2687db3430982ab09299e49e8cc",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F8a368a50c92e4b46a9e1028ab4024bff?format=webp&width=800&height=1200",
   },
   {
-    title: "Aesthetic Enhancement",
+    title: "Full mouth teeth implant",
     treatment: "Ceramic Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F9afbbcb292e84af5b8de9574b86cb951",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F5fe0d9aff3a24aa389b8b517f92e100f?format=webp&width=800&height=1200",
   },
   {
     title: "Spacing Correction",
     treatment: "Clear Aligners",
-    image: "/teeth-gap-closure-dental-alignment-before-after.jpg",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F94cca6db16314b07b3edee4d5028ae25?format=webp&width=800&height=1200",
   },
   {
-    title: "Complex Case",
+    title: "Fixed Crowns",
     treatment: "Metal Braces",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F75c5447cca744204b334766cc48f4761",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2Fe79440ba899d4d87be2ca1691ab4b25e?format=webp&width=800&height=1200",
   },
   {
-    title: "Quick Alignment",
+    title: "Clear aligners",
     treatment: "Clear Aligners",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa85192c0436d4571a8e6190f11f433bd%2F4c6c018aae394d4882acf0c28a8bc41d",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F1de51d5462a249b98efb37df803b082a%2F0104b815552f4cfa90958d2bdcda6c66?format=webp&width=800&height=1200",
   },
 ]
 
@@ -65,27 +65,10 @@ export default function BeforeAfter() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6" />
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {filters.map((filter) => (
-            <Button
-              key={filter}
-              onClick={() => setSelectedFilter(filter)}
-              variant={selectedFilter === filter ? "default" : "outline"}
-              className={`transition-all hover:scale-105 ${
-                selectedFilter === filter
-                  ? "bg-primary hover:bg-primary/90 text-white shadow-lg"
-                  : "border-primary text-primary hover:bg-primary/5 hover:border-primary/70"
-              }`}
-            >
-              {filter}
-            </Button>
-          ))}
-        </div>
 
         {/* Gallery Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          {filtered.map((caseItem, idx) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          {cases.map((caseItem, idx) => (
             <div
               key={idx}
               onMouseEnter={() => setHoveredCard(idx)}
@@ -98,23 +81,13 @@ export default function BeforeAfter() {
                   hoveredCard === idx ? "ring-2 ring-primary" : ""
                 }`}
               >
-                <div className="relative h-80 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                <div className="relative h-[600px] sm:h-[500px] lg:h-[550px] overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                   <img
                     src={caseItem.image || "/placeholder.svg"}
                     alt={caseItem.title}
                     className={`w-full h-full object-cover transition-all duration-500 ${
                       hoveredCard === idx ? "scale-110 brightness-110" : "scale-100 brightness-90"
                     }`}
-                    style={
-                      idx === 0 || idx === 1
-                        ? {
-                            backgroundImage: `url(${caseItem.image})`,
-                            backgroundRepeat: "no-repeat",
-                            backgroundPosition: "center",
-                            backgroundSize: "cover",
-                          }
-                        : undefined
-                    }
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
@@ -126,7 +99,6 @@ export default function BeforeAfter() {
                   >
                     {caseItem.title}
                   </h3>
-                  <p className="text-sm text-primary font-semibold">{caseItem.treatment}</p>
                 </div>
               </Card>
             </div>

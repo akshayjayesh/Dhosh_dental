@@ -7,53 +7,46 @@ import { Card } from "@/components/ui/card"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    location: "Kochi",
+    name: "Sanisha Roshith",
+    location: "",
     rating: 5,
-    text: "Outstanding experience! The team was professional and the treatment results exceeded my expectations. Highly recommended!",
+    text: "One of the best dental clinic I have visited. The doctor is very kind, patient, and skilled. Treatment was painless and affordable. Staff behavior is also very good. Truly satisfied with the service❤️❤️",
     image: "/smiling-woman-portrait-professional.jpg",
   },
   {
-    name: "Rajesh Kumar",
-    location: "Thiruvananthapuram",
+    name: "Vinod Parery",
+    location: "",
     rating: 5,
-    text: "Best orthodontic clinic in Kerala. The clear aligners were comfortable and effective. Very satisfied with the results.",
-    image: "/smiling-man-portrait-professional.jpg",
-  },
-  {
-    name: "Priya Sharma",
-    location: "Ernakulathappan",
-    rating: 5,
-    text: "Dr Niyaz Nazeer is incredibly skilled. The entire staff is courteous and the clinic is state-of-the-art. Worth every penny!",
-    image: "/happy-woman-face-portrait-smiling.jpg",
-  },
-  {
-    name: "Arun Menon",
-    location: "Kozhikode",
-    rating: 5,
-    text: "Fantastic treatment journey. The technology used is impressive and the results are remarkable. Thank you!",
+    text: "I am thoroughly impressed with the quality of care and service at Ghosh's New Dental Clinic. The entire team is exceptional, reflecting the high standards of Dr. Ghosh himself. As a highly experienced dentist with over three decades in practice, he is someone I would confidently recommend for any dental needs.",
     image: "/confident-man-smiling-professional-portrait.jpg",
   },
   {
-    name: "Lisa Anna",
-    location: "Thrissur",
+    name: "Anjana Ak",
+    location: "",
     rating: 5,
-    text: "Extremely professional team. The EMI options made treatment affordable. My smile transformation is incredible!",
+    text: "Very friendly and comfortable Dr if anybody have dental problem can visit the clinic without 2nd thought and opinion. Reception staff treat us very kindly",
+    image: "/happy-woman-face-portrait-smiling.jpg",
+  },
+  {
+    name: "Nandana E",
+    location: "",
+    rating: 5,
+    text: "Excellent experience from start to finish. The dentist and staff were incredibly professional and friendly. Treatment was painless, and they explained everything clearly. Highly recommend this clinic for anyone nervous about dental visits.",
     image: "/cheerful-woman-face-portrait-smiling.jpg",
   },
   {
-    name: "Vinod Parery",
-    location: "Thalassery",
+    name: "AMAYA M P",
+    location: "",
     rating: 5,
-    text: "I am thoroughly impressed with the quality of care and service at Ghosh's New Dental Clinic. The entire team is exceptional, reflecting the high standards of Dr. Ghosh himself. As a highly experienced dentist with over three decades in practice, he is someone I would confidently recommend for any dental needs. This clinic has truly become our family's go-to for dental care. Best wishes",
-    image: "/confident-man-smiling-professional-portrait.jpg",
+    text: "I highly recommend this clinic. The doctor took the time to explain everything, making me feel very comfortable. ✨",
+    image: "/happy-woman-face-portrait-smiling.jpg",
   },
   {
-    name: "Nani Mk",
-    location: "Thalassery",
+    name: "Apranarineesh Parambath",
+    location: "",
     rating: 5,
-    text: "Top notch service at Ghosh's dental studio! Their team provided high quality treatment with utmost care. Would definitely recommend!!",
-    image: "/happy-woman-face-portrait-smiling.jpg",
+    text: "Best doctor and staff I had ever met for my dental treatment thank you.",
+    image: "/confident-man-smiling-professional-portrait.jpg",
   },
 ]
 
@@ -120,7 +113,9 @@ export default function Testimonials() {
                   />
                   <div>
                     <p className="font-bold text-foreground">{testimonials[current].name}</p>
-                    <p className="text-muted-foreground text-sm">{testimonials[current].location}</p>
+                    {testimonials[current].location && (
+                      <p className="text-muted-foreground text-sm">{testimonials[current].location}</p>
+                    )}
                   </div>
                 </div>
               </div>

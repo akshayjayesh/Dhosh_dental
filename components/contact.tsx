@@ -19,7 +19,26 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null)
   const [submitMessage, setSubmitMessage] = useState("")
 
-  const dentalServices = ["Clear Aligners", "Metal Braces", "Ceramic Braces", "Consultation", "Other"]
+  const dentalServices = [
+    "Digital Dentistry",
+    "Smile Design",
+    "Veneer & Teeth Whitening",
+    "Dental Implants",
+    "Root Canal, Post, Inlays, Onlays",
+    "Aligners",
+    "Micro Implants – Orthodontic Treatment",
+    "Paediatric Dentistry",
+    "Conservative Dentistry",
+    "Metal Braces",
+    "Ceramic Braces",
+    "Crown & Bridges",
+    "Porcelain Fused Ceramic",
+    "Zirconia, E-Max, DMLS",
+    "Periodontal Treatments",
+    "Oral Surgery Procedures",
+    "Full Mouth Rehabilitation",
+    "Replacement of Few Missing Teeth",
+  ]
   const services = dentalServices
   const timeSlots = ["9:00 AM", "10:00 AM", "11:00 AM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"]
 
@@ -69,7 +88,7 @@ export default function Contact() {
 
     try {
       // Create WhatsApp message with form details
-      const whatsappNumber = "919447045560" // Clinic's WhatsApp number
+      const whatsappNumber = "919778084629" // Clinic's WhatsApp number
       const message = `Hello! I would like to book an appointment.
 
 Name: ${formData.name}
@@ -113,7 +132,7 @@ Please confirm my appointment.`
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top-4 duration-700">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Book Your Appointment</h2>
@@ -127,7 +146,7 @@ Please confirm my appointment.`
         <div className="mb-16">
           <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 h-96 lg:h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1234567890!2d75.4833!3d11.7469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5c7a7a7a7a7a7%3A0x1234567890abcdef!2sThangal%20Palace%2C%20Thalassery!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.7923847152046!2d75.4951709!3d11.7470596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4277cb1189f07%3A0xc73bdc760d7ca69e!2sGhosh's%20dental%20studio%20and%20Belviso%20facial%20cosmetic%20centre!5e0!3m2!1sen!2sin!4v1704900000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -135,12 +154,12 @@ Please confirm my appointment.`
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
-              title="Ghosh's Dental Studio - Thalassery Location"
+              title="Ghosh's Dental Studio Location"
             />
           </Card>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
             <Card className="p-8 shadow-lg hover:shadow-xl transition-all h-full bg-gradient-to-br from-white to-primary/5 border border-primary/10">
@@ -330,7 +349,7 @@ Please confirm my appointment.`
 
               <div className="space-y-4">
                 <a
-                  href="tel:+919447045560"
+                  href="tel:+919778084629"
                   className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-lg transition-all cursor-pointer group hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-lg flex items-center justify-center transition-all">
@@ -338,12 +357,12 @@ Please confirm my appointment.`
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Call Us</p>
-                    <p className="font-bold text-primary">+91 94470 45560</p>
+                    <p className="font-bold text-primary text-sm sm:text-base break-words">9778084629 / 04 9025 43671</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:hello@drniyaz.com"
+                  href="mailto:ghoshsdentalstudio@gmail.com"
                   className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-lg transition-all cursor-pointer group hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-primary/10 group-hover:bg-primary/20 rounded-lg flex items-center justify-center transition-all">
@@ -351,7 +370,7 @@ Please confirm my appointment.`
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Email</p>
-                    <p className="font-bold text-primary">hello@dr.com</p>
+                    <p className="font-bold text-primary text-sm sm:text-base break-words">ghoshsdentalstudio@gmail.com</p>
                   </div>
                 </a>
 
@@ -388,7 +407,7 @@ Please confirm my appointment.`
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
                     <span className="text-muted-foreground">Sunday:</span>{" "}
-                    <span className="font-semibold">11:30 AM - 5:00 PM</span>
+                    <span className="font-semibold">10:00 AM - 7:00 PM</span>
                   </p>
                   <p className="flex justify-between hover:translate-x-1 transition-transform cursor-pointer">
                     <span className="text-muted-foreground">Monday:</span>{" "}

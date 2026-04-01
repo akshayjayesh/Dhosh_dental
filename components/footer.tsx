@@ -86,7 +86,7 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Clear Aligners
+                  Tooth Whitening
                 </button>
               </li>
               <li>
@@ -94,7 +94,7 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Metal Braces
+                  Smile Designing
                 </button>
               </li>
               <li>
@@ -102,15 +102,55 @@ export default function Footer() {
                   onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Ceramic Braces
+                  Dental Implants
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                   className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
                 >
-                  Consultation
+                  Orthodontic Treatment & Invisalign
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Root Canal Treatment
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Periodontal Treatment
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Full Mouth Rehabilitation
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Pediatric Dentistry
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-gray-300 hover:text-primary transition-colors hover:translate-x-1 inline-block"
+                >
+                  Oral Surgery
                 </button>
               </li>
             </ul>
@@ -119,9 +159,10 @@ export default function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="border-t border-white/10 pt-8 flex items-center justify-between">
-          <p className="text-sm text-gray-300">&copy; 2025 Dr Ghosh's dental Studio. All rights reserved.</p>
-          <div className="flex gap-4">
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 mb-6">
+            <p className="text-sm text-gray-300">&copy; 2025 Dr Ghosh's dental Studio. All rights reserved.</p>
+            <div className="flex gap-4">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -154,6 +195,10 @@ export default function Footer() {
             >
               <Linkedin size={20} />
             </a>
+          </div>
+          </div>
+          <div className="text-center">
+            <p className="text-sm text-gray-300">Developed by <a href="https://kozker.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-semibold hover:underline">Kozker Tech</a></p>
           </div>
         </div>
       </div>
